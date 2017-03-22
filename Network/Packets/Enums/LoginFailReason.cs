@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Enums
 {
-    public enum PacketType
+    public enum LoginFailReason
     {
-        ChatMessage
+        UsernameDoesntExist,
+        InvalidCombinaison,
+        Banned
     }
 }

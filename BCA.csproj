@@ -7,8 +7,8 @@
     <ProjectGuid>{4E818F97-BB68-461C-8F2C-A03F8D3EF9E4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BCA.Network</RootNamespace>
-    <AssemblyName>BCA.Network</AssemblyName>
+    <RootNamespace>BCA</RootNamespace>
+    <AssemblyName>BCA</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -45,13 +45,21 @@
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BCrypt.Net, Version=0.1.4141.31969, Culture=neutral, PublicKeyToken=f3bc8f8c31beeb49, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\BCrypt.Net.0.1.0\lib\net35\BCrypt.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NLog.4.3.11\lib\net45\NLog.dll</HintPath>
+      <HintPath>..\..\packages\NLog.4.4.4\lib\net45\NLog.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -64,16 +72,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinaryClient.cs" />
-    <Compile Include="NetworkClient.cs" />
-    <Compile Include="NetworkServer.cs" />
-    <Compile Include="Packets\Enums\PacketType.cs" />
-    <Compile Include="Packets\Enums\PlayerState.cs" />
-    <Compile Include="Packets\MMO\FromClient\MMOClientAuthentification.cs" />
-    <Compile Include="Packets\MMO\FromServer\MMOServerAuthentification.cs" />
-    <Compile Include="Packets\Packet.cs" />
-    <Compile Include="Packets\Standard\FromClient\StandardClientChatMessage.cs" />
-    <Compile Include="Packets\Standard\FromServer\StandardServerChatMessage.cs" />
+    <Compile Include="Common\CryptoManager.cs" />
+    <Compile Include="Network\Packets\BinaryClient.cs" />
+    <Compile Include="Network\NetworkClient.cs" />
+    <Compile Include="Network\NetworkServer.cs" />
+    <Compile Include="Network\Packets\Enums\LoginFailReason.cs" />
+    <Compile Include="Network\Packets\Enums\PacketType.cs" />
+    <Compile Include="Network\Packets\Enums\PlayerState.cs" />
+    <Compile Include="Network\Packets\Enums\RegisterFailReason.cs" />
+    <Compile Include="Network\Packets\MMO\FromClient\MMOClientAuthentification.cs" />
+    <Compile Include="Network\Packets\MMO\FromServer\MMOServerAuthentification.cs" />
+    <Compile Include="Network\Packets\Packet.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientChatMessage.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientLogin.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientRegister.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerChatMessage.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerLogin.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerRegister.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
