@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromServer
 {
-    public class StandardServerChatMessage : Packet
+    public class StandardServerCommandError : Packet
     {
-        public ChatMessageType Type { get; set; }
-        public string Username { get; set; }
-        public string Message { get; set; }
+        public CommandErrorType Type { get; set; }
     }
 }

@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Enums
 {
-    public enum PacketType
+    public enum ChatMessageType
     {
-        ChatMessage,
-        Register,
-        Login,
-        AddHubPlayer,
-        RemoveHubPlayer,
-        PlayerList,
-        CommandError
+        Standard,
+        Information,
+        Animation    
     }
 }

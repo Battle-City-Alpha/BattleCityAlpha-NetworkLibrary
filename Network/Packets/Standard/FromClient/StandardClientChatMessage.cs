@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BCA.Network.Packets.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,7 @@ namespace BCA.Network.Packets.Standard.FromClient
 {
     public class StandardClientChatMessage : Packet
     {
-        public string Message;
-
-        public StandardClientChatMessage(string message)
-        {
-            Message = message;
-        }
+        public ChatMessageType Type { get; set; }
+        public string Message { get; set; }
     }
 }

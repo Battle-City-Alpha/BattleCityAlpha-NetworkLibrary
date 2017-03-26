@@ -76,8 +76,11 @@
     <Compile Include="Network\Packets\BinaryClient.cs" />
     <Compile Include="Network\NetworkClient.cs" />
     <Compile Include="Network\NetworkServer.cs" />
+    <Compile Include="Network\Packets\Enums\CommandErrorType.cs" />
+    <Compile Include="Network\Packets\Enums\ChatMessageType.cs" />
     <Compile Include="Network\Packets\Enums\LoginFailReason.cs" />
     <Compile Include="Network\Packets\Enums\PacketType.cs" />
+    <Compile Include="Network\Packets\Enums\PlayerRank.cs" />
     <Compile Include="Network\Packets\Enums\PlayerState.cs" />
     <Compile Include="Network\Packets\Enums\RegisterFailReason.cs" />
     <Compile Include="Network\Packets\MMO\FromClient\MMOClientAuthentification.cs" />
@@ -86,9 +89,13 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChatMessage.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLogin.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRegister.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerAddHubPlayer.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerCommandError.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerChatMessage.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLogin.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerRegister.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerRemoveHubPlayer.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerPlayerlist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

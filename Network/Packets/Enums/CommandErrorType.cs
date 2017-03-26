@@ -6,14 +6,8 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Enums
 {
-    public enum PacketType
+    public enum CommandErrorType
     {
-        ChatMessage,
-        Register,
-        Login,
-        AddHubPlayer,
-        RemoveHubPlayer,
-        PlayerList,
-        CommandError
+        SmallRank
     }
 }
