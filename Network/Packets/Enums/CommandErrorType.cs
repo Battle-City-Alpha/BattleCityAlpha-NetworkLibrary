@@ -8,6 +8,10 @@ namespace BCA.Network.Packets.Enums
 {
     public enum CommandErrorType
     {
-        SmallRank
+        SmallRank,
+        NotVip,
+        ArgTooLong,
+        UnknownError,
+        NoError
     }
 }

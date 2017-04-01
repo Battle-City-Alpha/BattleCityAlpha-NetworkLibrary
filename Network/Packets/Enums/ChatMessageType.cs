@@ -10,6 +10,8 @@ namespace BCA.Network.Packets.Enums
     {
         Standard,
         Information,
-        Animation    
+        Animation,
+        MOTD,
+        Greet
     }
 }
