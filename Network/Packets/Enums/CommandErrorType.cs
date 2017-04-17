@@ -12,6 +12,7 @@ namespace BCA.Network.Packets.Enums
         NotVip,
         ArgTooLong,
         UnknownError,
-        NoError
+        NoError,
+        PlayerNotConnected
     }
 }

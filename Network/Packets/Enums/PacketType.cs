@@ -14,6 +14,9 @@ namespace BCA.Network.Packets.Enums
         AddHubPlayer,
         RemoveHubPlayer,
         PlayerList,
-        CommandError
+        CommandError,
+        Kick,
+        Ban,
+        Mute
     }
 }

@@ -11,6 +11,7 @@ namespace BCA.Network.Packets.Enums
         Standard,
         Information,
         Animation,
+        Staff,
         MOTD,
         Greet
     }
