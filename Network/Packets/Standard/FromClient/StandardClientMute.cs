@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BCA.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace BCA.Network.Packets.Standard.FromClient
 {
     public class StandardClientMute : Packet
     {
-        public string Target { get; set; }
+        public PlayerInfo Target { get; set; }
         public int Time { get; set; }
         public string Reason { get; set; }
     }

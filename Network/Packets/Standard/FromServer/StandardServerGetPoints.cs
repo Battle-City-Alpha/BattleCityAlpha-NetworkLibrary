@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromServer
 {
-    public class StandardServerRemoveHubPlayer : Packet
+    public class StandardServerGetPoints : Packet
     {
-        public PlayerInfo Infos { get; set; }
+        public PlayerInfo Player { get; set; }
+        public int Points { get; set; }
+        public bool PrestigePoints { get; set; }
     }
 }

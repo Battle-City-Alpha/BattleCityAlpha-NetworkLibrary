@@ -1,4 +1,4 @@
-﻿using BCA.Common;
+﻿using BCA.Common.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromClient
 {
-    public class StandardClientKick : Packet
+    public class StandardClientDuelRequest : Packet
     {
-        public PlayerInfo Target { get; set; }
-        public string Reason { get; set; }
+        public int TargetId { get; set; }
+        public DuelType Type { get; set; }
     }
 }

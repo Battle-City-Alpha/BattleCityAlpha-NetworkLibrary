@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BCA.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace BCA.Network.Packets.Standard.FromServer
 {
     public class StandardServerPlayerlist : Packet
     {
-        public string[] Userlist { get; set; }
+        public PlayerInfo[] Userlist { get; set; }
     }
 }

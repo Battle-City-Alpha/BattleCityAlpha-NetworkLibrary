@@ -6,14 +6,8 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Enums
 {
-    public enum CommandErrorType
+    public enum FailReason
     {
-        SmallRank,
-        NotVip,
-        ArgTooLong,
-        UnknownError,
-        NoError,
-        PlayerNotConnected,
         NotEnoughMoney
     }
 }

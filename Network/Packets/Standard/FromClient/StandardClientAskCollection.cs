@@ -1,4 +1,4 @@
-﻿using BCA.Common;
+﻿using BCA.Network.Packets.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromClient
 {
-    public class StandardClientKick : Packet
+    public class StandardClientAskCollection : Packet
     {
-        public PlayerInfo Target { get; set; }
-        public string Reason { get; set; }
+        public AskCollectionReason Reason { get; set; }
     }
 }

@@ -17,6 +17,27 @@ namespace BCA.Network.Packets.Enums
         CommandError,
         Kick,
         Ban,
-        Mute
+        Banlist,
+        EnabledAccount,
+        Mute,
+        PrivateMessage,
+        Profil,
+        UpdateCollection,
+        DuelRequest,
+        DuelRequestAnswer,
+        DuelSeeker,
+        UpdateRoom,
+        AskBooster,
+        PurchaseItem,
+        Clear,
+        MPAll,
+        Panel,
+        GivePoints,
+        GivePrestigePoints,
+        GiveCard,
+        GiveAvatar,
+        PanelUserlist,
+        PanelUpdate,
+        PanelAskProfile
     }
 }

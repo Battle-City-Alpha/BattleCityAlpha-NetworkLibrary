@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromServer
 {
-    public class StandardServerRemoveHubPlayer : Packet
+    public class StandardServerDuelRequestResult : Packet
     {
-        public PlayerInfo Infos { get; set; }
+        public PlayerInfo Player { get; set; }
+        public bool Result { get; set; }
     }
 }

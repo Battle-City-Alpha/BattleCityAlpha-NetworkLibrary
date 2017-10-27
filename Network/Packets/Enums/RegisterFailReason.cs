@@ -15,6 +15,7 @@ namespace BCA.Network.Packets.Enums
         InvalidEmail,
         UsernameTooLong,
         UnknownProblem,
-        Banned
+        Banned,
+        NotEnoughMoney
     }
 }

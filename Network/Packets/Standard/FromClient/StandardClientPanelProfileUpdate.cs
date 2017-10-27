@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromClient
 {
-    public class StandardClientKick : Packet
+    public class StandardClientPanelProfileUpdate : Packet
     {
-        public PlayerInfo Target { get; set; }
-        public string Reason { get; set; }
+        public PlayerInfo Player { get; set; }
+        public string Observation { get; set; }
     }
 }

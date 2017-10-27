@@ -8,10 +8,9 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromServer
 {
-    public class StandardServerChatMessage : Packet
+    public class StandardServerUpdateCollection : Packet
     {
-        public ChatMessageType Type { get; set; }
-        public PlayerInfo Player { get; set; }
-        public string Message { get; set; }
+        public Dictionary<int, PlayerCard> Collection { get; set; }
+        public AskCollectionReason Reason { get; set; }
     }
 }
