@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromClient
 {
-    public class StandardClientGiveCard : Packet
+    public class StandardClientEnabled : Packet
     {
         public string Target { get; set; }
-        public int Id { get; set; }
+        public string Reason { get; set; }
     }
 }

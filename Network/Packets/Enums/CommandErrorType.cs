@@ -14,6 +14,7 @@ namespace BCA.Network.Packets.Enums
         UnknownError,
         NoError,
         PlayerNotConnected,
-        NotEnoughMoney
+        NotEnoughMoney,
+        PlayerNotExisted
     }
 }

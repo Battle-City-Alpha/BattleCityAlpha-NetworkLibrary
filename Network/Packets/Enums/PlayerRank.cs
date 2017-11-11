@@ -8,11 +8,12 @@ namespace BCA.Network.Packets.Enums
 {
     public enum PlayerRank
     {
-        Player = 1,
-        Contributor = 2,
-        Animator = 3,
-        Developper = 4,
-        Moderator = 5,
+        Player = 0,
+        Contributor = 1,
+        Animator = 2,
+        Developper = 3,
+        Moderator = 4,
+        Bot = 98,
         Owner = 99
     }
 }

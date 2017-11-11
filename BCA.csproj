@@ -100,9 +100,11 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBanlist.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChatMessage.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientClear.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientDisabled.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelRequest.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelRequestAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelSeeker.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientEnabled.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveAvatar.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveCard.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGivePoints.cs" />
@@ -115,7 +117,10 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPrivateMessage.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientProfilAsk.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPurchase.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientRanker.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRegister.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeRequest.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeRequestAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAddHubPlayer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskBooster.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBan.cs" />
@@ -123,6 +128,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerClear.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerCommandError.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerChatMessage.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerDisabledAccount.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelRequest.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelRequestResult.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelSeeker.cs" />
@@ -140,6 +146,8 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerRegister.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerRemoveHubPlayer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPlayerlist.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeRequest.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeRequestAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerUpdateCollection.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerUpdateRoom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

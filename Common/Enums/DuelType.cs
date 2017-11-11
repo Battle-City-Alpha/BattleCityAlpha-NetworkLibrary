@@ -11,6 +11,7 @@ namespace BCA.Common.Enums
         Single,
         Match,
         Tag,
-        Ranked
+        Ranked,
+        Trade
     }
 }

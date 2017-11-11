@@ -10,6 +10,7 @@ namespace BCA.Network.Packets.Enums
     {
         UsernameDoesntExist,
         InvalidCombinaison,
-        Banned
+        Banned,
+        DisabledAccount
     }
 }

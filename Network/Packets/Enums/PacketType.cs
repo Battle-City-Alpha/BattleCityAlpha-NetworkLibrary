@@ -19,6 +19,7 @@ namespace BCA.Network.Packets.Enums
         Ban,
         Banlist,
         EnabledAccount,
+        DisabledAccount,
         Mute,
         PrivateMessage,
         Profil,
@@ -33,11 +34,13 @@ namespace BCA.Network.Packets.Enums
         MPAll,
         Panel,
         GivePoints,
-        GivePrestigePoints,
         GiveCard,
         GiveAvatar,
         PanelUserlist,
         PanelUpdate,
-        PanelAskProfile
+        PanelAskProfile,
+        Ranker,
+        TradeRequest,
+        TradeRequestAnswer
     }
 }
