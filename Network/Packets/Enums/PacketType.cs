@@ -41,6 +41,9 @@ namespace BCA.Network.Packets.Enums
         PanelAskProfile,
         Ranker,
         TradeRequest,
-        TradeRequestAnswer
+        TradeRequestAnswer,
+        TradeMessage,
+        TradeProposition,
+        TradeExit
     }
 }

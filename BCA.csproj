@@ -119,6 +119,9 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPurchase.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRanker.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRegister.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeExit.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeMessage.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeProposition.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeRequest.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeRequestAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAddHubPlayer.cs" />
@@ -146,6 +149,9 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerRegister.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerRemoveHubPlayer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPlayerlist.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeExit.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeMessage.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeProposition.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeRequest.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeRequestAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerUpdateCollection.cs" />

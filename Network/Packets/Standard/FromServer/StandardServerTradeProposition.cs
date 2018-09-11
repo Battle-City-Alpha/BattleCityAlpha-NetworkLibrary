@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BCA.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromServer
 {
-    public class StandardServerPurchaseItem : Packet
+    public class StandardServerTradeProposition : Packet
     {
-        public int[] Cards { get; set; }
-        public int Points { get; set; }
+        public List<PlayerCard> Cards { get; set; }
     }
 }
