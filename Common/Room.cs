@@ -12,6 +12,7 @@ namespace BCA.Common
         public int Id { get; set; }
         public DuelType Type { get; set; }
         public PlayerInfo[] Players { get; set; }
+        public int[] ELOs { get; set; }
         public List<PlayerInfo> Observers { get; set; }
 
         public Room(int id, DuelType type)
@@ -19,13 +20,17 @@ namespace BCA.Common
             Id = id;
             Type = type;
             Players = new PlayerInfo[Type == DuelType.Tag ? 4 : 2];
+            ELOs = new int[Type == DuelType.Tag ? 4 : 2];
         }
 
-        public int AddPlayer(PlayerInfo player)
+        public int AddPlayer(PlayerInfo player, int elo)
         {
             int pos = GetAvailablePlayerPos();
             if (pos != -1)
+            {
                 Players[pos] = player;
+                ELOs[pos] = elo;
+            }
             return pos;
         }
 
@@ -33,7 +38,10 @@ namespace BCA.Common
         {
             int pos = GetPlayerPos(player);
             if (pos != -1)
+            {
                 Players[pos] = null;
+                ELOs[pos] = -1;
+            }
             return pos; 
         }
 

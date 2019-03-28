@@ -55,7 +55,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
@@ -103,6 +103,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskPanelProfile.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBan.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBanlist.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeAvatar.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChatMessage.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientClear.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDisabled.cs" />
@@ -114,6 +115,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveCard.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGivePoints.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientKick.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientLoadAvatars.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLogin.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientMPAll.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientMute.cs" />
@@ -145,6 +147,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetCard.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetPoints.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerKick.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadAvatars.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLogin.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerMute.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPanelUpdateProfile.cs" />

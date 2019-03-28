@@ -45,6 +45,8 @@ namespace BCA.Network.Packets.Enums
         TradeMessage,
         TradeProposition,
         TradeExit,
-        TradeAnswer
+        TradeAnswer,
+        ChangeAvatar,
+        LoadAvatar
     }
 }

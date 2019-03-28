@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BCA.Network.Packets.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,11 +17,10 @@ namespace BCA.Network.Packets.Standard.FromServer
         public int RankedWin { get; set; }
         public int RankedLose { get; set; }
         public int ELO { get; set; }
-        public int Rank { get; set; }
+        public PlayerRank Rank { get; set; }
         public int UnrankedWin { get; set; }
         public int UnrankedLose { get; set; }
         public int RageQuit { get; set; }
         public int GiveUp { get; set; }
-
     }
 }
