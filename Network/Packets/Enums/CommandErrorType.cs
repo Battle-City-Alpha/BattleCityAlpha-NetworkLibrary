@@ -15,6 +15,9 @@ namespace BCA.Network.Packets.Enums
         NoError,
         PlayerNotConnected,
         NotEnoughMoney,
-        PlayerNotExisted
+        PlayerNotExisted,
+        CardNotOwned,
+        AvatarNotOwned,
+        PriceUpTo0
     }
 }

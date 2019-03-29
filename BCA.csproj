@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\BasicCard.cs" />
+    <Compile Include="Common\BrocanteCard.cs" />
     <Compile Include="Common\CryptoManager.cs" />
     <Compile Include="Common\Enums\DuelType.cs" />
     <Compile Include="Common\PlayerCard.cs" />
@@ -89,7 +90,6 @@
     <Compile Include="Network\Packets\Enums\AskCollectionReason.cs" />
     <Compile Include="Network\Packets\Enums\CommandErrorType.cs" />
     <Compile Include="Network\Packets\Enums\ChatMessageType.cs" />
-    <Compile Include="Network\Packets\Enums\FailReason.cs" />
     <Compile Include="Network\Packets\Enums\LoginFailReason.cs" />
     <Compile Include="Network\Packets\Enums\PacketType.cs" />
     <Compile Include="Network\Packets\Enums\PlayerRank.cs" />
@@ -99,13 +99,17 @@
     <Compile Include="Network\Packets\MMO\FromServer\MMOServerAuthentification.cs" />
     <Compile Include="Network\Packets\Packet.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskBooster.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskBrocante.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskCollection.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskPanelProfile.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskSelectCard.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBan.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBanlist.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyBrocanteCard.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeAvatar.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChatMessage.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientClear.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientCloseBrocante.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDisabled.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelRequest.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelRequestAnswer.cs" />
@@ -126,6 +130,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPurchase.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRanker.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRegister.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientSellBrocanteCard.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeExit.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeMessage.cs" />
@@ -134,6 +139,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeRequestAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAddHubPlayer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskBooster.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadBrocante.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBan.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBanlist.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerClear.cs" />
@@ -148,6 +154,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetPoints.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerKick.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadAvatars.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadSelectCard.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLogin.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerMute.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPanelUpdateProfile.cs" />

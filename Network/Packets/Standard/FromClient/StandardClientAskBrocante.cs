@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BCA.Network.Packets.Enums
+namespace BCA.Network.Packets.Standard.FromClient
 {
-    public enum FailReason
+    public class StandardClientAskBrocante : Packet
     {
-        NotEnoughMoney
     }
 }

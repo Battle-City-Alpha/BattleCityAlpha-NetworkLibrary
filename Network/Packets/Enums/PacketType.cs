@@ -47,6 +47,11 @@ namespace BCA.Network.Packets.Enums
         TradeExit,
         TradeAnswer,
         ChangeAvatar,
-        LoadAvatar
+        LoadAvatar,
+        LoadBrocante,
+        SellBrocanteCard,
+        BuyBrocanteCard,
+        CloseBrocante,
+        AskSelectCard
     }
 }
