@@ -105,8 +105,12 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskSelectCard.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBan.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBanlist.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyAvatar.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyBrocanteCard.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyTeam.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyVip.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeAvatar.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeUsername.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChatMessage.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientClear.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientCloseBrocante.cs" />
@@ -118,6 +122,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveAvatar.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveCard.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGivePoints.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientGreetIllimite.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientKick.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLoadAvatars.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLogin.cs" />
@@ -130,6 +135,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPurchase.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRanker.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRegister.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientSearchCard.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientSellBrocanteCard.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeExit.cs" />
@@ -139,6 +145,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeRequestAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAddHubPlayer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskBooster.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerCloseBrocante.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadBrocante.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBan.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBanlist.cs" />
@@ -165,6 +172,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerRegister.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerRemoveHubPlayer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPlayerlist.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerSearchCard.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeExit.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeMessage.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeProposition.cs" />

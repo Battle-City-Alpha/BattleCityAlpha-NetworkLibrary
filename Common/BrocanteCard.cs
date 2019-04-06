@@ -13,5 +13,6 @@ namespace BCA.Common
         public string SellerName { get; set; }
         public int Price { get; set; }
         public string CardName { get; set; }
+        public int Quantity { get; set; }
     }
 }

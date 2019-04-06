@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromClient
 {
-    public class StandardClientSellBrocanteCard : Packet
+    public class StandardClientSearchCard : Packet
     {
-        public int CardId { get; set; }
-        public int Price { get; set; }
-        public int Quantity { get; set; }
+        public int Id { get; set; }
     }
 }

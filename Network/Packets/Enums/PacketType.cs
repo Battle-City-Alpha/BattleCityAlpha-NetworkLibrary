@@ -52,6 +52,12 @@ namespace BCA.Network.Packets.Enums
         SellBrocanteCard,
         BuyBrocanteCard,
         CloseBrocante,
-        AskSelectCard
+        AskSelectCard,
+        SearchCard,
+        BuyVIP,
+        ChangeUsername,
+        BuyAvatar,
+        BuyTeam,
+        BuyGreet
     }
 }
