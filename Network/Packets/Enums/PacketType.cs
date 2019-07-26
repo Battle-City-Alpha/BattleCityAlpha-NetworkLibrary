@@ -46,6 +46,7 @@ namespace BCA.Network.Packets.Enums
         TradeProposition,
         TradeExit,
         TradeAnswer,
+        TradeEnd,
         ChangeAvatar,
         LoadAvatar,
         LoadBrocante,
@@ -58,6 +59,9 @@ namespace BCA.Network.Packets.Enums
         ChangeUsername,
         BuyAvatar,
         BuyTeam,
-        BuyGreet
+        BuyGreet,
+        Help,
+        Unban,
+        Unmute
     }
 }

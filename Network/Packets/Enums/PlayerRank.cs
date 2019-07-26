@@ -9,7 +9,7 @@ namespace BCA.Network.Packets.Enums
     public enum PlayerRank
     {
         Player = 0,
-        Contributor = 1,
+        Ruller = 1,
         Animator = 2,
         Developper = 3,
         Moderator = 4,
