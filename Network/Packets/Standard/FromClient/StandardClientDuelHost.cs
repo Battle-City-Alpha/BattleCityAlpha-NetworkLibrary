@@ -8,10 +8,8 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromClient
 {
-    public class StandardClientDuelRequestAnswer : Packet
+    public class StandardClientDuelHost : Packet
     {
-        public bool Result { get; set; }
-        public PlayerInfo Player { get; set; }
         public RoomConfig Config { get; set; }
     }
 }

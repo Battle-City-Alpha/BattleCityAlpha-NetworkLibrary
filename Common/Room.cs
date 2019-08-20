@@ -9,18 +9,18 @@ namespace BCA.Common
 {
     public class Room
     {
-        public int Id { get; set; }
-        public DuelType Type { get; set; }
+        public int Id { get; private set; }
         public PlayerInfo[] Players { get; set; }
         public int[] ELOs { get; set; }
         public List<PlayerInfo> Observers { get; set; }
+        public RoomConfig Config { get; set; }
 
-        public Room(int id, DuelType type)
+        public Room(int id, RoomConfig config)
         {
             Id = id;
-            Type = type;
-            Players = new PlayerInfo[Type == DuelType.Tag ? 4 : 2];
-            ELOs = new int[Type == DuelType.Tag ? 4 : 2];
+            Config = config;
+            Players = new PlayerInfo[Config.Type == RoomType.Tag ? 4 : 2];
+            ELOs = new int[Config.Type == RoomType.Tag ? 4 : 2];
         }
 
         public int AddPlayer(PlayerInfo player, int elo)
@@ -62,7 +62,22 @@ namespace BCA.Common
 
         public bool IsRanked()
         {
-            return Type == DuelType.Ranked;
+            return Config.Ranked;
+        }
+
+        public int GetRules()
+        {
+            return (int)Config.Rules;
+        }
+
+        public int GetRoomType()
+        {
+            return (int)Config.Type;
+        }
+
+        public bool IsFull()
+        {
+            return GetAvailablePlayerPos() == -1;
         }
     }
 }

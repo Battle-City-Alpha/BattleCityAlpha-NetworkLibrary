@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromClient
 {
-    public class StandardClientDuelSeeker
+    public class StandardClientDuelJoin : Packet
     {
-        public DuelType Type { get; set; }
+        public int Id { get; set; }
+        public RoomType RoomType { get; set; }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromServer
 {
-    public class StandardServerDuelSeeker : Packet
+    public class StandardServerDuelStart : Packet
     {
         public Room Room { get; set; }
     }

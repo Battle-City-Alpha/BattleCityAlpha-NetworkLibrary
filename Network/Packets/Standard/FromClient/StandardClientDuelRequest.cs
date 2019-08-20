@@ -1,4 +1,5 @@
-﻿using BCA.Common.Enums;
+﻿using BCA.Common;
+using BCA.Common.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,6 @@ namespace BCA.Network.Packets.Standard.FromClient
     public class StandardClientDuelRequest : Packet
     {
         public int TargetId { get; set; }
-        public DuelType Type { get; set; }
+        public RoomConfig Config { get; set; }
     }
 }

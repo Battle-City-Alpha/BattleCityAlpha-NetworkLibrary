@@ -79,11 +79,13 @@
     <Compile Include="Common\BasicCard.cs" />
     <Compile Include="Common\BrocanteCard.cs" />
     <Compile Include="Common\CryptoManager.cs" />
-    <Compile Include="Common\Enums\DuelType.cs" />
+    <Compile Include="Common\Enums\RoomType.cs" />
+    <Compile Include="Common\Enums\RoomRules.cs" />
     <Compile Include="Common\PlayerCard.cs" />
     <Compile Include="Common\PlayerInfo.cs" />
     <Compile Include="Common\Room.cs" />
     <Compile Include="Common\GlobalTools.cs" />
+    <Compile Include="Common\RoomConfig.cs" />
     <Compile Include="Network\Packets\BinaryClient.cs" />
     <Compile Include="Network\NetworkClient.cs" />
     <Compile Include="Network\NetworkServer.cs" />
@@ -116,9 +118,10 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientClear.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientCloseBrocante.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDisabled.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelJoin.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelRequest.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelRequestAnswer.cs" />
-    <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelSeeker.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelHost.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientEnabled.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveAvatar.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveCard.cs" />
@@ -158,7 +161,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDisabledAccount.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelRequest.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelRequestResult.cs" />
-    <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelSeeker.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelStart.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetAvatar.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetCard.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetPoints.cs" />

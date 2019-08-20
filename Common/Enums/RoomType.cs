@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace BCA.Common.Enums
 {
-    public enum DuelType
+    public enum RoomType
     {
-        Single,
-        Match,
-        Tag,
-        Ranked,
-        Trade
+        Single = 0,
+        Match = 1,
+        Tag = 2
     }
 }
