@@ -1,4 +1,5 @@
 ﻿using BCA.Common.Enums;
+using BCA.Network.Packets.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,30 +22,62 @@ namespace BCA.Common
             Config = config;
             Players = new PlayerInfo[Config.Type == RoomType.Tag ? 4 : 2];
             ELOs = new int[Config.Type == RoomType.Tag ? 4 : 2];
+            Observers = new List<PlayerInfo>();
         }
 
-        public int AddPlayer(PlayerInfo player, int elo)
+        public void AddPlayer(int pos, PlayerInfo player, int elo)
         {
-            int pos = GetAvailablePlayerPos();
-            if (pos != -1)
-            {
-                Players[pos] = player;
-                ELOs[pos] = elo;
-            }
-            return pos;
+            Players[pos] = player;
+            ELOs[pos] = elo;
         }
-
-        public int RemovePlayer(PlayerInfo player)
+        public void RemovePlayer(int pos, PlayerInfo player)
         {
-            int pos = GetPlayerPos(player);
-            if (pos != -1)
-            {
-                Players[pos] = null;
-                ELOs[pos] = -1;
-            }
-            return pos; 
+            Players[pos] = null;
+            ELOs[pos] = -1;
+        }        
+
+        public void AddSpectator(PlayerInfo info)
+        {
+            Observers.Add(info);
+        }
+        public void RemoveSpectator(PlayerInfo info)
+        {
+            Observers.Remove(info);
         }
 
+        public void StartGame()
+        {
+            foreach (PlayerInfo info in Players)
+                info.State = PlayerState.Duel;
+        }
+        public void EndGame()
+        {
+            foreach (PlayerInfo info in Players)
+                info.State = PlayerState.Lobby;
+        }
+
+        public bool IsRanked()
+        {
+            return Config.Ranked;
+        }
+        public int GetRules()
+        {
+            return (int)Config.Rules;
+        }
+        public int GetRoomType()
+        {
+            return (int)Config.Type;
+        }        
+        public PlayerInfo GetPlayer(string name)
+        {
+            for (int i = 0; i < Players.Length; i++)
+                if (Players[i].Username == name)
+                    return Players[i];
+            return null;
+        }
+
+        #region "Old functions"
+        /*
         private int GetPlayerPos(PlayerInfo player)
         {
             for (int i = 0; i < Players.Length; i++)
@@ -59,25 +92,11 @@ namespace BCA.Common
                     return i;
             return -1;
         }
-
-        public bool IsRanked()
-        {
-            return Config.Ranked;
-        }
-
-        public int GetRules()
-        {
-            return (int)Config.Rules;
-        }
-
-        public int GetRoomType()
-        {
-            return (int)Config.Type;
-        }
-
         public bool IsFull()
         {
             return GetAvailablePlayerPos() == -1;
         }
+         */
+        #endregion
     }
 }
