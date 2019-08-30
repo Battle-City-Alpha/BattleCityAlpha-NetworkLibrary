@@ -13,6 +13,7 @@ namespace BCA.Common
         public string Username { get; set; }
         public bool VIP { get; set; }
         public int ELO { get; set; }
+        public int Level { get; set; }
         public PlayerRank Rank { get; set; }
         public PlayerState State { get; set; }
     }

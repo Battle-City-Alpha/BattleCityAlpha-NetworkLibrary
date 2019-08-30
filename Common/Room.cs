@@ -15,6 +15,7 @@ namespace BCA.Common
         public int[] ELOs { get; set; }
         public List<PlayerInfo> Observers { get; set; }
         public RoomConfig Config { get; set; }
+        public int Winner { get; set; }
 
         public Room(int id, RoomConfig config)
         {
@@ -50,8 +51,9 @@ namespace BCA.Common
             foreach (PlayerInfo info in Players)
                 info.State = PlayerState.Duel;
         }
-        public void EndGame()
+        public void EndGame(int winner)
         {
+            Winner = winner;
             foreach (PlayerInfo info in Players)
                 info.State = PlayerState.Lobby;
         }
