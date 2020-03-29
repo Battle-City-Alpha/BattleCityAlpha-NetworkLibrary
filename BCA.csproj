@@ -141,6 +141,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRegister.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientSearchCard.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientSellBrocanteCard.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientSpectate.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeExit.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeMessage.cs" />
