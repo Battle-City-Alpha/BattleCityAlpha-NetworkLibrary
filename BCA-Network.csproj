@@ -191,6 +191,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAddHubPlayer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskBooster.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerCloseBrocante.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelSpectate.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadBrocante.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBan.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBanlist.cs" />

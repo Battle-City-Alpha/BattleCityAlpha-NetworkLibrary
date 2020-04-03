@@ -49,13 +49,19 @@ namespace BCA.Common
         public void StartGame()
         {
             foreach (PlayerInfo info in Players)
+            {
                 info.State = PlayerState.Duel;
+                info.CurrentRoom = this;
+            }
         }
         public void EndGame(int winner)
         {
             Winner = winner;
             foreach (PlayerInfo info in Players)
+            {
                 info.State = PlayerState.Lobby;
+                info.CurrentRoom = null;
+            }
         }
 
         public bool IsRanked()

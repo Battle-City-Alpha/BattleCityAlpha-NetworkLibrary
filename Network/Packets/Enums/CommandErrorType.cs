@@ -19,6 +19,7 @@ namespace BCA.Network.Packets.Enums
         CardNotOwned,
         AvatarNotOwned,
         PriceUpTo0,
-        AlreadyInDuel
+        AlreadyInDuel,
+        PlayerNotInDuel
     }
 }
