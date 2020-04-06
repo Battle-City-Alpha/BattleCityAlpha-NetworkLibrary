@@ -38,6 +38,7 @@ namespace BCA.Network.Packets.Enums
         Panel,
         GivePoints,
         DonPoints,
+        CardDonation,
         GiveCard,
         GiveAvatar,
         PanelUserlist,

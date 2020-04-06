@@ -149,6 +149,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyBrocanteCard.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyTeam.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyVip.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientCardDonation.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeAvatar.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeUsername.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChatMessage.cs" />
@@ -190,6 +191,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientUnban.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAddHubPlayer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskBooster.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerCardDonation.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerCloseBrocante.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelSpectate.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadBrocante.cs" />

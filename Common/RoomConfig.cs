@@ -15,6 +15,6 @@ namespace BCA.Common
         public int CardByHand { get; set; }
         public int StartDuelLP { get; set; }
         public bool Ranked { get; set; }
-        public bool Link { get; set; }
+        public int MasterRules { get; set; }
     }
 }
