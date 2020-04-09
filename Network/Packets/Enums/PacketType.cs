@@ -68,6 +68,7 @@ namespace BCA.Network.Packets.Enums
         Help,
         Unban,
         Unmute,
-        SpectatePlayer
+        SpectatePlayer,
+        GetBonus
     }
 }

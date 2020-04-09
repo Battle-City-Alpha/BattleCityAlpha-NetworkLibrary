@@ -116,6 +116,7 @@
     <Compile Include="Common\BasicCard.cs" />
     <Compile Include="Common\BrocanteCard.cs" />
     <Compile Include="Common\CryptoManager.cs" />
+    <Compile Include="Common\Enums\BonusType.cs" />
     <Compile Include="Common\Enums\RoomType.cs" />
     <Compile Include="Common\Enums\RoomRules.cs" />
     <Compile Include="Common\PlayerCard.cs" />
@@ -194,6 +195,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerCardDonation.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerCloseBrocante.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelSpectate.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetBonus.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadBrocante.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBan.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBanlist.cs" />
