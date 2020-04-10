@@ -194,6 +194,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskBooster.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerCardDonation.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerCloseBrocante.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelResult.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelSpectate.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetBonus.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadBrocante.cs" />

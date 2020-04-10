@@ -69,6 +69,7 @@ namespace BCA.Network.Packets.Enums
         Unban,
         Unmute,
         SpectatePlayer,
-        GetBonus
+        GetBonus,
+        DuelResult
     }
 }
