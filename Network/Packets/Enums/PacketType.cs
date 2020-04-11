@@ -73,6 +73,8 @@ namespace BCA.Network.Packets.Enums
         DuelResult,
         AskTitle,
         ChangeTitle,
-        GiveTitle
+        GiveTitle,
+        Maintenance,
+        StopMaintenance
     }
 }

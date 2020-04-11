@@ -138,6 +138,7 @@
     <Compile Include="Network\Packets\MMO\FromClient\MMOClientAuthentification.cs" />
     <Compile Include="Network\Packets\MMO\FromServer\MMOServerAuthentification.cs" />
     <Compile Include="Network\Packets\Packet.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskMaintenance.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeTitle.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskBooster.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskBrocante.cs" />
@@ -185,6 +186,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientSearchCard.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientSellBrocanteCard.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientSpectate.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientStopMaintenance.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeExit.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeMessage.cs" />
@@ -219,6 +221,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadSelectCard.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadTitles.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLogin.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerMaintenance.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerMute.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPanelUpdateProfile.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPanelUserlist.cs" />

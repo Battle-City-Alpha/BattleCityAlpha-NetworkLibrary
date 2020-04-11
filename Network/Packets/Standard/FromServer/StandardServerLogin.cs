@@ -11,5 +11,8 @@ namespace BCA.Network.Packets.Standard.FromServer
     {
         public bool Success { get; set; }
         public LoginFailReason Reason { get; set; }
+
+        public string MaintenanceReason { get; set; }
+        public int MaintenanceTimeEstimation { get; set; }
     }
 }
