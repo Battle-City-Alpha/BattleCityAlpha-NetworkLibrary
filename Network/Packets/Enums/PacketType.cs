@@ -70,6 +70,9 @@ namespace BCA.Network.Packets.Enums
         Unmute,
         SpectatePlayer,
         GetBonus,
-        DuelResult
+        DuelResult,
+        AskTitle,
+        ChangeTitle,
+        GiveTitle
     }
 }

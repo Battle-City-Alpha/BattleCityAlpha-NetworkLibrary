@@ -21,6 +21,7 @@ namespace BCA.Network.Packets.Enums
         PriceUpTo0,
         AlreadyInDuel,
         PlayerNotInDuel,
-        QuantityUpTo0
+        QuantityUpTo0,
+        TitleNotOwned
     }
 }

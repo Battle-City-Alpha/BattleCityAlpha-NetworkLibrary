@@ -10,6 +10,7 @@ namespace BCA.Network.Packets.Standard.FromServer
     public class StandardServerProfilInfo : Packet
     {
         public string Username { get; set; }
+        public string Title { get; set; }
         public int AvatarId { get; set; }
         public int CardNumber { get; set; }
         public int Level { get; set; }
