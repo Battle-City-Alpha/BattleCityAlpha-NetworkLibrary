@@ -119,6 +119,7 @@
     <Compile Include="Common\Enums\BonusType.cs" />
     <Compile Include="Common\Enums\RoomType.cs" />
     <Compile Include="Common\Enums\RoomRules.cs" />
+    <Compile Include="Common\OfflineMessage.cs" />
     <Compile Include="Common\PlayerCard.cs" />
     <Compile Include="Common\PlayerInfo.cs" />
     <Compile Include="Common\Room.cs" />
@@ -223,6 +224,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLogin.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerMaintenance.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerMute.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerOfflineMessages.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPanelUpdateProfile.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPanelUserlist.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPrivateMessage.cs" />
