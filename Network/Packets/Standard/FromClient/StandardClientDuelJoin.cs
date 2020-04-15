@@ -11,5 +11,6 @@ namespace BCA.Network.Packets.Standard.FromClient
     {
         public int Id { get; set; }
         public RoomType RoomType { get; set; }
+        public string RoomPass { get; set; }
     }
 }

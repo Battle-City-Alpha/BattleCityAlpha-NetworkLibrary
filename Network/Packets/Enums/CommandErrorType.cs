@@ -22,6 +22,8 @@ namespace BCA.Network.Packets.Enums
         AlreadyInDuel,
         PlayerNotInDuel,
         QuantityUpTo0,
-        TitleNotOwned
+        TitleNotOwned,
+        InvalidRoomPass,
+        CannotPlayAgainstYourself
     }
 }

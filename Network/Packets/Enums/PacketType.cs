@@ -76,6 +76,7 @@ namespace BCA.Network.Packets.Enums
         GiveTitle,
         Maintenance,
         StopMaintenance,
-        OfflineMessages
+        OfflineMessages,
+        LoadPlayerCustomization
     }
 }
