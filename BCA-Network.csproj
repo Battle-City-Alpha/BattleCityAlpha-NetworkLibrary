@@ -120,6 +120,7 @@
     <Compile Include="Common\Customization.cs" />
     <Compile Include="Common\Enums\BonusType.cs" />
     <Compile Include="Common\Enums\CustomizationType.cs" />
+    <Compile Include="Common\Enums\RoomState.cs" />
     <Compile Include="Common\Enums\RoomType.cs" />
     <Compile Include="Common\Enums\RoomRules.cs" />
     <Compile Include="Common\OfflineMessage.cs" />

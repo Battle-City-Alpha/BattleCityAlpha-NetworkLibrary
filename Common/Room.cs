@@ -16,6 +16,7 @@ namespace BCA.Common
         public int[] ELOs { get; set; }
         public List<PlayerInfo> Observers { get; set; }
         public RoomConfig Config { get; set; }
+        public RoomState State { get; set; }
         public int Winner { get; set; }
 
         public Customization[] Avatars { get; set; }
@@ -30,6 +31,7 @@ namespace BCA.Common
             Players = new PlayerInfo[Config.Type == RoomType.Tag ? 4 : 2];
             ELOs = new int[Config.Type == RoomType.Tag ? 4 : 2];
             Observers = new List<PlayerInfo>();
+            State = RoomState.Waiting;
 
             Avatars = new Customization[Config.Type == RoomType.Tag ? 4 : 2];
             Borders = new Customization[Config.Type == RoomType.Tag ? 4 : 2];
@@ -64,10 +66,11 @@ namespace BCA.Common
 
         public void StartGame()
         {
-
+            State = RoomState.Dueling;
         }
         public void EndGame(int winner)
         {
+            State = RoomState.Finished;
             Winner = winner;
         }
 

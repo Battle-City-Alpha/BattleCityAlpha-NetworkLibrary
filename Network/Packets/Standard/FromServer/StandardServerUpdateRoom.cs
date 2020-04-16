@@ -1,4 +1,5 @@
 ﻿using BCA.Common;
+using BCA.Common.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,5 @@ namespace BCA.Network.Packets.Standard.FromServer
     public class StandardServerUpdateRoom : Packet
     {
         public Room Room { get; set; }
-        public bool Remove { get; set; }
     }
 }
