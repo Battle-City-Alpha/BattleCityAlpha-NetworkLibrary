@@ -182,6 +182,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientMute.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientOpenPanel.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPanelProfileUpdate.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientRoomNeedPassword.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientStopPlayRanked.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPlayRanked.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPrivateMessage.cs" />
@@ -230,6 +231,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLogin.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerMaintenance.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerMute.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerNeedRoomPassword.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerOfflineMessages.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPanelUpdateProfile.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPanelUserlist.cs" />

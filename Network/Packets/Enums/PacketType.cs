@@ -70,6 +70,7 @@ namespace BCA.Network.Packets.Enums
         Unban,
         Unmute,
         SpectatePlayer,
+        NeedRoomPassword,
         GetBonus,
         DuelResult,
         AskTitle,
