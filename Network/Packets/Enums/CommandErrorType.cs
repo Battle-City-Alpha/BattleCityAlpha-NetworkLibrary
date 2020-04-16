@@ -24,6 +24,7 @@ namespace BCA.Network.Packets.Enums
         QuantityUpTo0,
         TitleNotOwned,
         InvalidRoomPass,
-        CannotPlayAgainstYourself
+        CannotPlayAgainstYourself,
+        OpponentDisconnected
     }
 }
