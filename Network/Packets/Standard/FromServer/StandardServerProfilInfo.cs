@@ -13,6 +13,8 @@ namespace BCA.Network.Packets.Standard.FromServer
         public string Username { get; set; }
         public string Title { get; set; }
         public Customization Avatar { get; set; }
+        public Customization Border { get; set; }
+        public Customization Sleeve { get; set; }
         public int CardNumber { get; set; }
         public int Level { get; set; }
         public int Exp { get; set; }
