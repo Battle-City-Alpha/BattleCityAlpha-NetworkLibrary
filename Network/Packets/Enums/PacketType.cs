@@ -67,11 +67,6 @@ namespace BCA.Network.Packets.Enums
         CloseBrocante,
         AskSelectCard,
         SearchCard,
-        BuyVIP,
-        ChangeUsername,
-        BuyAvatar,
-        BuyTeam,
-        BuyGreet,
         Help,
         Unban,
         Unmute,
@@ -85,6 +80,16 @@ namespace BCA.Network.Packets.Enums
         Maintenance,
         StopMaintenance,
         OfflineMessages,
-        LoadPlayerCustomization
+        LoadPlayerCustomization,
+        ResetStats,
+        ChangeUsername,
+        UsernameColor,
+        BuyPrestigeCustom,
+        BuyOwnCustom,
+        BuyGreet,
+        BuyVIP,
+        BuyMonthPack,
+        BuyDoubleBP,
+        OpenPrestigeShop
     }
 }

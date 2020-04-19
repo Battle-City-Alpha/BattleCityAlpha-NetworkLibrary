@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromClient
 {
-    public class StandardClientGreetIllimite : Packet
-    {        
+    public class StandardClientResetStats : Packet
+    {
     }
 }

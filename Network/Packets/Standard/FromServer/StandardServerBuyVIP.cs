@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BCA.Common.Enums
+namespace BCA.Network.Packets.Standard.FromServer
 {
-    public enum CustomizationType
+    public class StandardServerBuyVIP : Packet
     {
-        Avatar,
-        Border,
-        Sleeve,
-        Title
+        public int PP { get; set; }
     }
 }

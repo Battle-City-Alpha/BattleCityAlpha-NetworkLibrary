@@ -15,6 +15,7 @@ namespace BCA.Network.Packets.Enums
         NoError,
         PlayerNotConnected,
         NotEnoughMoney,
+        NotEnoughPP,
         PlayerNotExisted,
         CardNotOwned,
         AvatarNotOwned,
@@ -27,6 +28,7 @@ namespace BCA.Network.Packets.Enums
         TitleNotOwned,
         InvalidRoomPass,
         CannotPlayAgainstYourself,
-        OpponentDisconnected
+        OpponentDisconnected,
+        URLTooLong
     }
 }

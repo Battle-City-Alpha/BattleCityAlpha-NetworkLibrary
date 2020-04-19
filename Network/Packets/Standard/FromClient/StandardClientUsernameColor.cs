@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromClient
 {
-    public class StandardClientBuyVIP : Packet
+    public class StandardClientUsernameColor : Packet
     {
+        public string ChatColor { get; set; }
     }
 }

@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromClient
 {
-    public class StandardClientBuyTeam : Packet
+    public class StandardClientBuyMonthPack : Packet
     {
-        public string Name { get; set; }
     }
 }

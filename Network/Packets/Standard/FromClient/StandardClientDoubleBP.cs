@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BCA.Common.Enums
+namespace BCA.Network.Packets.Standard.FromClient
 {
-    public enum CustomizationType
+    public class StandardClientDoubleBP : Packet
     {
-        Avatar,
-        Border,
-        Sleeve,
-        Title
     }
 }
