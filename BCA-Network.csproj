@@ -135,6 +135,7 @@
     <Compile Include="Network\Packets\Enums\AskCollectionReason.cs" />
     <Compile Include="Network\Packets\Enums\CommandErrorType.cs" />
     <Compile Include="Network\Packets\Enums\ChatMessageType.cs" />
+    <Compile Include="Network\Packets\Enums\CustomizationAchievementType.cs" />
     <Compile Include="Network\Packets\Enums\LoginFailReason.cs" />
     <Compile Include="Network\Packets\Enums\PacketType.cs" />
     <Compile Include="Network\Packets\Enums\PlayerRank.cs" />
@@ -228,6 +229,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelSpectate.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetBonus.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetBorder.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetCustomizationAchievement.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetSleeve.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetTitle.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGreetInfinite.cs" />

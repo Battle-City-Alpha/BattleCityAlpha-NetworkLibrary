@@ -90,6 +90,7 @@ namespace BCA.Network.Packets.Enums
         BuyVIP,
         BuyMonthPack,
         BuyDoubleBP,
-        OpenPrestigeShop
+        OpenPrestigeShop,
+        GetCustomizationAchievement
     }
 }
