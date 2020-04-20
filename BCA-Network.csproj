@@ -145,6 +145,7 @@
     <Compile Include="Network\Packets\MMO\FromServer\MMOServerAuthentification.cs" />
     <Compile Include="Network\Packets\Packet.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskMaintenance.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskPrestigeCustomizations.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyMonthPack.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyOwnCustomization.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyPrestigeCustomization.cs" />
@@ -250,6 +251,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerKick.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadAvatars.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadPlayerCustomizationTextures.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadPrestigeCustomizations.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadSelectCard.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadSleeves.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadTitles.cs" />

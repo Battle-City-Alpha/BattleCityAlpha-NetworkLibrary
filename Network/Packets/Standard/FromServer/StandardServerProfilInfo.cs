@@ -34,5 +34,6 @@ namespace BCA.Network.Packets.Standard.FromServer
         public int TagDraw { get; set; }
         public int RageQuit { get; set; }
         public int GiveUp { get; set; }
+        public int Ranking { get; set; }
     }
 }
