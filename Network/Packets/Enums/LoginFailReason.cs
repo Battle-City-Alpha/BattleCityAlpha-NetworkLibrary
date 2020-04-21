@@ -13,6 +13,7 @@ namespace BCA.Network.Packets.Enums
         Banned,
         DisabledAccount,
         UserAlreadyConnected,
-        Maintenance
+        Maintenance,
+        DataRetrievalAlreadyMade
     }
 }
