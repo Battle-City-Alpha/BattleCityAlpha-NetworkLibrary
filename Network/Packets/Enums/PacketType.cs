@@ -93,6 +93,7 @@ namespace BCA.Network.Packets.Enums
         OpenPrestigeShop,
         GetCustomizationAchievement,
         AskPrestigeCustoms,
-        DataRetrieval
+        DataRetrieval,
+        NextRankingSeason
     }
 }

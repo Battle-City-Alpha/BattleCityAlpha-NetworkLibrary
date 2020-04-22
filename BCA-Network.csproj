@@ -192,6 +192,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLogin.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientMPAll.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientMute.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientNextRankingSeason.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientOpenPanel.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientOpenPrestigeShop.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPanelProfileUpdate.cs" />
