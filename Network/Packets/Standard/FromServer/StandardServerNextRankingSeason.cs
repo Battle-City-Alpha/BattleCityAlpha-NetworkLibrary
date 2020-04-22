@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromServer
 {
-    class StandardServerNextRankingSeason
+    public class StandardServerNextRankingSeason : Packet
     {
     }
 }
