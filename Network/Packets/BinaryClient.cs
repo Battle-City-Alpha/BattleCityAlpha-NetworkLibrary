@@ -13,7 +13,7 @@ namespace BCA.Network
         public event Action<BinaryReader> PacketReceived;
 
         protected int MaxPacketLength = 0xFFFFF;
-        protected int HeaderSize = 2;
+        protected int HeaderSize = 4;
         protected bool IsHeaderSizeIncluded = false;
 
         private NetworkClient _client;
