@@ -262,6 +262,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerMaintenance.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerMute.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerNeedRoomPassword.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerNextRankingSeason.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerOfflineMessages.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerOpenPrestigeShop.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPanelUpdateProfile.cs" />
