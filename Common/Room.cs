@@ -1,10 +1,5 @@
 ﻿using BCA.Common.Enums;
-using BCA.Network.Packets.Enums;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BCA.Common
 {
@@ -53,7 +48,7 @@ namespace BCA.Common
             Avatars[pos] = null;
             Borders[pos] = null;
             Sleeves[pos] = null;
-        }        
+        }
 
         public void AddSpectator(PlayerInfo info)
         {
@@ -85,7 +80,7 @@ namespace BCA.Common
         public int GetRoomType()
         {
             return (int)Config.Type;
-        }        
+        }
         public PlayerInfo GetPlayer(string name)
         {
             for (int i = 0; i < Players.Length; i++)

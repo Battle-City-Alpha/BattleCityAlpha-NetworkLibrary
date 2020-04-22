@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BCA.Network.Packets.MMO.FromServer
+﻿namespace BCA.Network.Packets.MMO.FromServer
 {
     public class MMOServerAuthentification : Packet
     {
         public bool Success;
-        
+
         public MMOServerAuthentification(bool success)
         {
             Success = success;

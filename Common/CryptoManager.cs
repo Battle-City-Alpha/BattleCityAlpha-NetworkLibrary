@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace BCA.Common
 {
@@ -15,11 +12,11 @@ namespace BCA.Common
         public static void GenerateKeys()
         {
             var csp = new RSACryptoServiceProvider(_keySize);
-            
+
             var privKey = csp.ExportParameters(true);
-            
+
             var pubKey = csp.ExportParameters(false);
-            
+
             string pubKeyString;
             {
                 var sw = new System.IO.StringWriter();
@@ -45,7 +42,7 @@ namespace BCA.Common
             using (var rsa = new RSACryptoServiceProvider(_keySize))
             {
                 try
-                {                 
+                {
                     rsa.FromXmlString(publicKey.ToString());
                     var encryptedData = rsa.Encrypt(testData, true);
                     var base64Encrypted = Convert.ToBase64String(encryptedData);
@@ -66,7 +63,7 @@ namespace BCA.Common
             {
                 try
                 {
-                    var base64Encrypted = text;                 
+                    var base64Encrypted = text;
                     rsa.FromXmlString(privateKey);
                     var resultBytes = Convert.FromBase64String(base64Encrypted);
                     var decryptedBytes = rsa.Decrypt(resultBytes, true);
