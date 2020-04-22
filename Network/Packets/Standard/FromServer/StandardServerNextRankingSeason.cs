@@ -2,5 +2,6 @@
 {
     public class StandardServerNextRankingSeason : Packet
     {
+        public int Season { get; set; }
     }
 }
