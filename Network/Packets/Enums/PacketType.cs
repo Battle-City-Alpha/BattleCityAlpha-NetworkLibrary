@@ -15,6 +15,7 @@
         EnabledAccount,
         DisabledAccount,
         Mute,
+        Muted,
         PrivateMessage,
         Profil,
         UpdateCollection,

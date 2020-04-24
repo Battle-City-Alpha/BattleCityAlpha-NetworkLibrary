@@ -23,6 +23,7 @@
         InvalidRoomPass,
         CannotPlayAgainstYourself,
         OpponentDisconnected,
-        URLTooLong
+        URLTooLong,
+        AlreadyBanned
     }
 }
