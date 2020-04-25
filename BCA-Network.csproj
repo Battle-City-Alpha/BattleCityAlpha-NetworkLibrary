@@ -281,6 +281,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeProposition.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeRequest.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeRequestAnswer.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerUnmute.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerUpdateCollection.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerUpdateRoom.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerUsernameColor.cs" />
