@@ -13,6 +13,7 @@ namespace BCA.Common
         public RoomConfig Config { get; set; }
         public RoomState State { get; set; }
         public int Winner { get; set; }
+        public bool IsRQorGiveUp { get; set; }
 
         public Customization[] Avatars { get; set; }
         public Customization[] Borders { get; set; }
@@ -27,6 +28,7 @@ namespace BCA.Common
             ELOs = new int[Config.Type == RoomType.Tag ? 4 : 2];
             Observers = new List<PlayerInfo>();
             State = RoomState.Waiting;
+            IsRQorGiveUp = false;
 
             Avatars = new Customization[Config.Type == RoomType.Tag ? 4 : 2];
             Borders = new Customization[Config.Type == RoomType.Tag ? 4 : 2];
