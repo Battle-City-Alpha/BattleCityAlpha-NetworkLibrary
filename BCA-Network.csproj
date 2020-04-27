@@ -126,6 +126,7 @@
     <Compile Include="Common\OfflineMessage.cs" />
     <Compile Include="Common\PlayerCard.cs" />
     <Compile Include="Common\PlayerInfo.cs" />
+    <Compile Include="Common\RankingPlayerInfos.cs" />
     <Compile Include="Common\Room.cs" />
     <Compile Include="Common\GlobalTools.cs" />
     <Compile Include="Common\RoomConfig.cs" />
@@ -178,6 +179,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelRequestAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelHost.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientEnabled.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientGetRanking.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveAvatar.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveBorder.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveCard.cs" />
@@ -198,6 +200,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPanelProfileUpdate.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientResetStats.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRoomNeedPassword.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientSendDeck.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientStopPlayRanked.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPlayRanked.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPrivateMessage.cs" />
@@ -234,6 +237,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetBonus.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetBorder.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetCustomizationAchievement.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetRanking.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetSleeve.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetTitle.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGreetInfinite.cs" />
@@ -276,6 +280,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPlayerlist.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerResetStat.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerSearchCard.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerSendDeck.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeExit.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeMessage.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeProposition.cs" />

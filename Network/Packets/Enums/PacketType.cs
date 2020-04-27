@@ -89,6 +89,8 @@
         GetCustomizationAchievement,
         AskPrestigeCustoms,
         DataRetrieval,
-        NextRankingSeason
+        NextRankingSeason,
+        ShareDeck,
+        GetRanking
     }
 }
