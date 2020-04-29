@@ -11,5 +11,7 @@ namespace BCA.Common
         public int StartDuelLP { get; set; }
         public bool Ranked { get; set; }
         public int MasterRules { get; set; }
+        public int DrawCount { get; set; }
+        public bool NoShuffleDeck { get; set; }
     }
 }
