@@ -198,6 +198,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientOpenPanel.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientOpenPrestigeShop.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPanelProfileUpdate.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientPong.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientResetStats.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRoomNeedPassword.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientSendDeck.cs" />
@@ -272,6 +273,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerOpenPrestigeShop.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPanelUpdateProfile.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPanelUserlist.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerPing.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPrivateMessage.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerProfilInfo.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPurchaseItem.cs" />

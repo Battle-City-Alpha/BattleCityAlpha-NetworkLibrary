@@ -91,6 +91,7 @@
         DataRetrieval,
         NextRankingSeason,
         ShareDeck,
-        GetRanking
+        GetRanking,
+        Ping
     }
 }

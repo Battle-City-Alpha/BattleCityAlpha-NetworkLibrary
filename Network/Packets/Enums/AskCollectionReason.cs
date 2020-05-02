@@ -3,6 +3,8 @@
     public enum AskCollectionReason
     {
         Deck_Edit,
-        Duel
+        Duel,
+        Brocante,
+        GiveCard
     }
 }
