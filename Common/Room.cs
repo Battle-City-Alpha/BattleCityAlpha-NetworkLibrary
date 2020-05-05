@@ -90,28 +90,5 @@ namespace BCA.Common
                     return Players[i];
             return null;
         }
-
-        #region "Old functions"
-        /*
-        private int GetPlayerPos(PlayerInfo player)
-        {
-            for (int i = 0; i < Players.Length; i++)
-                if (Players[i] == player)
-                    return i;
-            return -1;
-        }
-        private int GetAvailablePlayerPos()
-        {
-            for (int i = 0; i < Players.Length; i++)
-                if (Players[i] == null)
-                    return i;
-            return -1;
-        }
-        public bool IsFull()
-        {
-            return GetAvailablePlayerPos() == -1;
-        }
-         */
-        #endregion
     }
 }

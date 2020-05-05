@@ -5,6 +5,7 @@ namespace BCA.Network.Packets.Standard.FromServer
 {
     public class StandardServerProfilInfo : Packet
     {
+        public int UserID { get; set; }
         public string Username { get; set; }
         public string Title { get; set; }
         public Customization Avatar { get; set; }

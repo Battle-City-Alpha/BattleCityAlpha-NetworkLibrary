@@ -13,5 +13,10 @@ namespace BCA.Common
         public int MasterRules { get; set; }
         public int DrawCount { get; set; }
         public bool NoShuffleDeck { get; set; }
+
+        public bool IsCustom()
+        {
+            return (Banlist != 0 || (StartDuelLP != 8000 && Type != RoomType.Tag) || (StartDuelLP != 16000 && Type == RoomType.Tag) || CardByHand != 5 || MasterRules != 5 || DrawCount != 1 | NoShuffleDeck == true);
+        }
     }
 }

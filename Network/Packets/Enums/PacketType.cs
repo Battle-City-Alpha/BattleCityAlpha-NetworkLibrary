@@ -92,6 +92,7 @@
         NextRankingSeason,
         ShareDeck,
         GetRanking,
-        Ping
+        Ping,
+        AskGamesHistory
     }
 }

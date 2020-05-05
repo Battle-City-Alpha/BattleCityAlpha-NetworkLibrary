@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
@@ -7,6 +8,7 @@ namespace BCA.Network
 {
     public class NetworkServer
     {
+        private static Logger logger = LogManager.GetCurrentClassLogger();
         public bool IsListening { get; private set; }
 
         public event Action<NetworkClient> ClientConnected;
@@ -61,8 +63,9 @@ namespace BCA.Network
             {
                 _listener.BeginAcceptSocket(AcceptSocketCallback, null);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                logger.Fatal(ex.ToString());
                 Close();
             }
         }
@@ -79,8 +82,9 @@ namespace BCA.Network
                 }
                 BeginAcceptSocket();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                logger.Fatal(ex.ToString());
                 Close();
             }
         }

@@ -3,7 +3,7 @@
     public enum PlayerRank
     {
         Joueurs = 0,
-        Rullers = 1,
+        Rulers = 1,
         Animateurs = 2,
         Developpeurs = 3,
         Moderateurs = 4,
