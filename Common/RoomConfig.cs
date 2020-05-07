@@ -13,6 +13,7 @@ namespace BCA.Common
         public int MasterRules { get; set; }
         public int DrawCount { get; set; }
         public bool NoShuffleDeck { get; set; }
+        public string CaptionText { get; set; }
 
         public bool IsCustom()
         {

@@ -78,7 +78,8 @@ namespace BCA.Network
                 NetworkClient client = new NetworkClient(socket);
                 lock (_acceptedClients)
                 {
-                    _acceptedClients.Add(client);
+                    if (client.IsConnected)
+                        _acceptedClients.Add(client);
                 }
                 BeginAcceptSocket();
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Net;
 using System.Net.Sockets;
 
@@ -6,6 +7,8 @@ namespace BCA.Network
 {
     public class NetworkClient
     {
+        private static Logger logger = LogManager.GetCurrentClassLogger();
+
         public event Action Connected;
         public event Action<Exception> Disconnected;
         public event Action<byte[]> DataReceived;
@@ -35,10 +38,17 @@ namespace BCA.Network
 
         public void Initialize(Socket socket)
         {
-            _endPoint = (IPEndPoint)socket.RemoteEndPoint;
-            _socket = socket;
-            IsConnected = true;
-            Connected?.Invoke();
+            try
+            {
+                _endPoint = (IPEndPoint)socket.RemoteEndPoint;
+                _socket = socket;
+                IsConnected = true;
+                Connected?.Invoke();
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex.ToString());
+            }
         }
 
         public void BeginConnect(IPAddress address, int port)

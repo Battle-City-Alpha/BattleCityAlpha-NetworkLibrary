@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BCA.Network.Packets.Standard.FromClient
+﻿namespace BCA.Network.Packets.Standard.FromClient
 {
     public class StandardClientUnban : Packet
     {
