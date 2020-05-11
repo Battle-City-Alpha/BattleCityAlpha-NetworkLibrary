@@ -91,6 +91,7 @@
         DataRetrieval,
         NextRankingSeason,
         ShareDeck,
+        ShareReplay,
         GetRanking,
         Ping,
         AskGamesHistory

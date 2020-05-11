@@ -204,6 +204,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientResetStats.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRoomNeedPassword.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientSendDeck.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientShareReplay.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientStopPlayRanked.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPlayRanked.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPrivateMessage.cs" />
@@ -285,6 +286,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPlayerlist.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerResetStat.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerSearchCard.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerShareReplay.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerSendDeck.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeExit.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeMessage.cs" />

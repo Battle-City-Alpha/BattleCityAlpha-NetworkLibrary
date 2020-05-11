@@ -4,6 +4,6 @@ namespace BCA.Network.Packets.Standard.FromClient
 {
     public class StandardClientProfilAsk : Packet
     {
-        public PlayerInfo Username { get; set; }
+        public int UserID { get; set; }
     }
 }

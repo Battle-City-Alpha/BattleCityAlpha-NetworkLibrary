@@ -1,4 +1,5 @@
 ﻿using BCA.Network.Packets.Enums;
+using System;
 
 namespace BCA.Network.Packets.Standard.FromServer
 {
@@ -9,5 +10,8 @@ namespace BCA.Network.Packets.Standard.FromServer
 
         public string MaintenanceReason { get; set; }
         public int MaintenanceTimeEstimation { get; set; }
+
+        public string SanctionReason { get; set; }
+        public DateTime EndSanction { get; set; }
     }
 }
