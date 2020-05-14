@@ -119,6 +119,7 @@
     <Compile Include="Common\CryptoManager.cs" />
     <Compile Include="Common\Customization.cs" />
     <Compile Include="Common\Enums\BonusType.cs" />
+    <Compile Include="Common\Enums\CardRarity.cs" />
     <Compile Include="Common\Enums\CustomizationType.cs" />
     <Compile Include="Common\Enums\RoomState.cs" />
     <Compile Include="Common\Enums\RoomType.cs" />
@@ -225,8 +226,10 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientUnmute.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientUnban.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientUsernameColor.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskBoosterCollection.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAddHubPlayer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskBooster.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerBoosterCollection.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBuyMonthPack.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBuyPrestigeCustomization.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBuyOwnCustomization.cs" />

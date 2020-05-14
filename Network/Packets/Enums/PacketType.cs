@@ -94,6 +94,7 @@
         ShareReplay,
         GetRanking,
         Ping,
-        AskGamesHistory
+        AskGamesHistory,
+        AskBoosterCollection
     }
 }
