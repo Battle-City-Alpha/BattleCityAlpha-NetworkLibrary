@@ -95,6 +95,7 @@
         GetRanking,
         Ping,
         AskGamesHistory,
-        AskBoosterCollection
+        AskBoosterCollection,
+        AskMonthPack
     }
 }

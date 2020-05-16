@@ -149,6 +149,7 @@
     <Compile Include="Network\Packets\Packet.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskGamesHistory.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskMaintenance.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskMonthPack.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskPrestigeCustomizations.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskDataRetrieval.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyMonthPack.cs" />
@@ -229,6 +230,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskBoosterCollection.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAddHubPlayer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskBooster.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskMonthPack.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBoosterCollection.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBuyMonthPack.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBuyPrestigeCustomization.cs" />
