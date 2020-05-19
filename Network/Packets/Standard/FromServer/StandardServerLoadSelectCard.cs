@@ -8,5 +8,6 @@ namespace BCA.Network.Packets.Standard.FromServer
     {
         public Dictionary<int, PlayerCard> Collection { get; set; }
         public AskCollectionReason Reason { get; set; }
+        public bool CardSold { get; set; }
     }
 }
