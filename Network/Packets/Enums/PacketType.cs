@@ -96,6 +96,7 @@
         Ping,
         AskGamesHistory,
         AskBoosterCollection,
-        AskMonthPack
+        AskMonthPack,
+        UpdateHubPlayer
     }
 }
