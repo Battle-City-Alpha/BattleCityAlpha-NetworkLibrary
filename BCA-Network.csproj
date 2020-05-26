@@ -124,6 +124,7 @@
     <Compile Include="Common\Enums\RoomState.cs" />
     <Compile Include="Common\Enums\RoomType.cs" />
     <Compile Include="Common\Enums\RoomRules.cs" />
+    <Compile Include="Common\MonthlyBonus.cs" />
     <Compile Include="Common\OfflineMessage.cs" />
     <Compile Include="Common\PlayerCard.cs" />
     <Compile Include="Common\PlayerInfo.cs" />
@@ -247,6 +248,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetBonus.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetBorder.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetCustomizationAchievement.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetMonthlyBonus.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetRanking.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetSleeve.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetTitle.cs" />

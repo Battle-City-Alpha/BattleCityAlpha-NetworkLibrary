@@ -97,6 +97,7 @@
         AskGamesHistory,
         AskBoosterCollection,
         AskMonthPack,
-        UpdateHubPlayer
+        UpdateHubPlayer,
+        MonthlyBonus
     }
 }
