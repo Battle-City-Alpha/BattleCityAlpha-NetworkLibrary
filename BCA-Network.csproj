@@ -121,6 +121,7 @@
     <Compile Include="Common\Enums\BonusType.cs" />
     <Compile Include="Common\Enums\CardRarity.cs" />
     <Compile Include="Common\Enums\CustomizationType.cs" />
+    <Compile Include="Common\Enums\DailyQuestType.cs" />
     <Compile Include="Common\Enums\RoomState.cs" />
     <Compile Include="Common\Enums\RoomType.cs" />
     <Compile Include="Common\Enums\RoomRules.cs" />
@@ -148,6 +149,7 @@
     <Compile Include="Network\Packets\MMO\FromClient\MMOClientAuthentification.cs" />
     <Compile Include="Network\Packets\MMO\FromServer\MMOServerAuthentification.cs" />
     <Compile Include="Network\Packets\Packet.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskDailyQuest.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskGamesHistory.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskMaintenance.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskMonthPack.cs" />
@@ -157,6 +159,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyOwnCustomization.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyPrestigeCustomization.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeBorder.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeDailyQuest.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeSleeve.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeTitle.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskBooster.cs" />
@@ -184,6 +187,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelRequestAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelHost.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientEnabled.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientGetQuestReward.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGetRanking.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveAvatar.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveBorder.cs" />
@@ -238,8 +242,10 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBuyOwnCustomization.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBuyVIP.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerCardDonation.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerChangeDailyQuest.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerChangeUsername.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerCloseBrocante.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerDailyQuest.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDataRetrieval.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDoubleBP.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelResult.cs" />
@@ -248,6 +254,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetBonus.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetBorder.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetCustomizationAchievement.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetDailyQuestReward.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetMonthlyBonus.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetRanking.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetSleeve.cs" />

@@ -98,6 +98,9 @@
         AskBoosterCollection,
         AskMonthPack,
         UpdateHubPlayer,
-        MonthlyBonus
+        MonthlyBonus,
+        AskDailyQuest,
+        GetDailyQuest,
+        ChangeDailyQuest
     }
 }
