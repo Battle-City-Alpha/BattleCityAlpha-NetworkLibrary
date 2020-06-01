@@ -12,7 +12,7 @@ namespace BCA.Network
         public event Action<Exception> Disconnected;
         public event Action<BinaryReader> PacketReceived;
 
-        protected int MaxPacketLength = 0xFFFFF;
+        protected int MaxPacketLength = 0xFFFFFF;
         protected int HeaderSize = 4;
         protected bool IsHeaderSizeIncluded = false;
 
