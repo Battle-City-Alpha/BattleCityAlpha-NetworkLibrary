@@ -101,6 +101,7 @@
         MonthlyBonus,
         AskDailyQuest,
         GetDailyQuest,
-        ChangeDailyQuest
+        ChangeDailyQuest,
+        DailyQuestNotification
     }
 }

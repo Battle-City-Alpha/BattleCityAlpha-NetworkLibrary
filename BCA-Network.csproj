@@ -234,6 +234,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientUnban.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientUsernameColor.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskBoosterCollection.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardClientDailyQuestNotification.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAddHubPlayer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskBooster.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskMonthPack.cs" />
