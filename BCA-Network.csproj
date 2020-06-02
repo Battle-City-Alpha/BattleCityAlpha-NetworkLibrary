@@ -187,6 +187,8 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelRequest.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelRequestAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelHost.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelServerRestart.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelServerStop.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientEnabled.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGetQuestReward.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGetRanking.cs" />
@@ -234,7 +236,6 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientUnban.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientUsernameColor.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskBoosterCollection.cs" />
-    <Compile Include="Network\Packets\Standard\FromServer\StandardClientDailyQuestNotification.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAddHubPlayer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskBooster.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskMonthPack.cs" />
@@ -251,6 +252,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDataRetrieval.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDoubleBP.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelResult.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelServerStop.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelSpectate.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGamesHistory.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetBonus.cs" />

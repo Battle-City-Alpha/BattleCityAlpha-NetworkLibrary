@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BCA.Network.Packets.Standard.FromServer
+namespace BCA.Network.Packets.Standard.FromClient
 {
-    public class StandardServerDailyQuestNotification : Packet
+    public class StandardClientDuelServerRestart : Packet
     {
     }
 }

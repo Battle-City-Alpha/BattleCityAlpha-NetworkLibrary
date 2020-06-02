@@ -102,6 +102,8 @@
         AskDailyQuest,
         GetDailyQuest,
         ChangeDailyQuest,
-        DailyQuestNotification
+        DailyQuestNotification,
+        DuelServerStop,
+        DuelServerRestart
     }
 }
