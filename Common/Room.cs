@@ -45,11 +45,14 @@ namespace BCA.Common
         }
         public void RemovePlayer(int pos, PlayerInfo player)
         {
-            Players[pos] = null;
-            ELOs[pos] = -1;
-            Avatars[pos] = null;
-            Borders[pos] = null;
-            Sleeves[pos] = null;
+            if (State == RoomState.Waiting)
+            {
+                Players[pos] = null;
+                ELOs[pos] = -1;
+                Avatars[pos] = null;
+                Borders[pos] = null;
+                Sleeves[pos] = null;
+            }
         }
 
         public void AddSpectator(PlayerInfo info)

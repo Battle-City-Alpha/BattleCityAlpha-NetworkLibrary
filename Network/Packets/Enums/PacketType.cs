@@ -104,6 +104,9 @@
         ChangeDailyQuest,
         DailyQuestNotification,
         DuelServerStop,
-        DuelServerRestart
+        DuelServerRestart,
+        AskAnimations,
+        UpdateAnimation,
+        AnimationNotification
     }
 }
