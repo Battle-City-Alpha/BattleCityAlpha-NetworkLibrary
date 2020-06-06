@@ -5,6 +5,7 @@
         Avatar,
         Border,
         Sleeve,
+        Partner,
         Title
     }
 }

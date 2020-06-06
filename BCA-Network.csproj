@@ -163,6 +163,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyPrestigeCustomization.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeBorder.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeDailyQuest.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangePartner.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeSleeve.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeTitle.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskBooster.cs" />
@@ -197,6 +198,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveAvatar.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveBorder.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveCard.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientGivePartner.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGivePoints.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveSleeve.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveTitle.cs" />
@@ -204,6 +206,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientKick.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLoadAvatars.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLoadBorders.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientLoadPartners.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLoadSleeves.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLogin.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientMPAll.cs" />
@@ -266,6 +269,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetCustomizationAchievement.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetDailyQuestReward.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetMonthlyBonus.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetPartner.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetRanking.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetSleeve.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetTitle.cs" />
@@ -286,6 +290,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetPoints.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerKick.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadAvatars.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadPartners.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadPlayerCustomizationTextures.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadPrestigeCustomizations.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadSelectCard.cs" />

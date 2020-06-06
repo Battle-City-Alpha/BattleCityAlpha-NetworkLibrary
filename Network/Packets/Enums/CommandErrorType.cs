@@ -24,6 +24,7 @@
         CannotPlayAgainstYourself,
         OpponentDisconnected,
         URLTooLong,
-        AlreadyBanned
+        AlreadyBanned,
+        PartnerNotOwned
     }
 }

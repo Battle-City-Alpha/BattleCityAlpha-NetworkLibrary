@@ -18,6 +18,7 @@ namespace BCA.Common
         public Customization[] Avatars { get; set; }
         public Customization[] Borders { get; set; }
         public Customization[] Sleeves { get; set; }
+        public Customization[] Partners { get; set; }
 
         public Room(int id, RoomConfig config, bool needpassword)
         {
@@ -33,15 +34,17 @@ namespace BCA.Common
             Avatars = new Customization[Config.Type == RoomType.Tag ? 4 : 2];
             Borders = new Customization[Config.Type == RoomType.Tag ? 4 : 2];
             Sleeves = new Customization[Config.Type == RoomType.Tag ? 4 : 2];
+            Partners = new Customization[Config.Type == RoomType.Tag ? 4 : 2];
         }
 
-        public void AddPlayer(int pos, PlayerInfo player, int elo, Customization avatar, Customization border, Customization sleeve)
+        public void AddPlayer(int pos, PlayerInfo player, int elo, Customization avatar, Customization border, Customization sleeve, Customization partner)
         {
             Players[pos] = player;
             ELOs[pos] = elo;
             Avatars[pos] = avatar;
             Borders[pos] = border;
             Sleeves[pos] = sleeve;
+            Partners[pos] = partner;
         }
         public void RemovePlayer(int pos, PlayerInfo player)
         {
@@ -52,6 +55,7 @@ namespace BCA.Common
                 Avatars[pos] = null;
                 Borders[pos] = null;
                 Sleeves[pos] = null;
+                Partners[pos] = null;
             }
         }
 

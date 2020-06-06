@@ -107,6 +107,9 @@
         DuelServerRestart,
         AskAnimations,
         UpdateAnimation,
-        AnimationNotification
+        AnimationNotification,
+        ChangePartner,
+        GivePartner,
+        LoadPartner
     }
 }
