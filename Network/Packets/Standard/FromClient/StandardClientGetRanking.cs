@@ -2,5 +2,6 @@
 {
     public class StandardClientGetRanking : Packet
     {
+        public int SeasonOffset { get; set; }
     }
 }

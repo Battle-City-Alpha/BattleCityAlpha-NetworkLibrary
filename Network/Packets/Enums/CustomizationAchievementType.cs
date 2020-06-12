@@ -26,6 +26,7 @@
         BuyAllBooster,
         AvatarCount,
         TitleCount,
-        Event
+        Event,
+        Ranking
     }
 }

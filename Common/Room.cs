@@ -1,5 +1,8 @@
 ﻿using BCA.Common.Enums;
+using BCA.Common.Bets;
+using System;
 using System.Collections.Generic;
+using System.Timers;
 
 namespace BCA.Common
 {
@@ -20,6 +23,11 @@ namespace BCA.Common
         public Customization[] Sleeves { get; set; }
         public Customization[] Partners { get; set; }
 
+        public event Action<Room> WaitingRoom;
+        private Timer WaitingTimer;
+
+        public Bet Bet { get; set; }
+
         public Room(int id, RoomConfig config, bool needpassword)
         {
             Id = id;
@@ -35,10 +43,45 @@ namespace BCA.Common
             Borders = new Customization[Config.Type == RoomType.Tag ? 4 : 2];
             Sleeves = new Customization[Config.Type == RoomType.Tag ? 4 : 2];
             Partners = new Customization[Config.Type == RoomType.Tag ? 4 : 2];
+
+            WaitingTimer = new Timer();
+            WaitingTimer.Interval = Config.Type == RoomType.Tag ? TimeSpan.FromMinutes(4).TotalMilliseconds : TimeSpan.FromMinutes(2).TotalMilliseconds;
+            WaitingTimer.Elapsed += WaitingTimer_Elapsed;
+
+            Bet = null;
+        }
+        public void SetBet(Bet b)
+        {
+            Bet = b;
+        }
+        public bool IsShadowRoom()
+        {
+            return Bet != null;
+        }
+
+        private void WaitingTimer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            WaitingTimer.Enabled = false;
+            if (State != RoomState.Waiting)
+                return;
+
+            bool seekPlayer = false;
+            for (int i = 1; i < Players.Length; i++)
+                if (Players[i] == null)
+                {
+                    seekPlayer = true;
+                    break;
+                }
+
+            if (seekPlayer)
+                WaitingRoom?.Invoke(this);
         }
 
         public void AddPlayer(int pos, PlayerInfo player, int elo, Customization avatar, Customization border, Customization sleeve, Customization partner)
         {
+            if (pos == 0)
+                WaitingTimer.Enabled = true;
+
             Players[pos] = player;
             ELOs[pos] = elo;
             Avatars[pos] = avatar;
@@ -71,6 +114,7 @@ namespace BCA.Common
         public void StartGame()
         {
             State = RoomState.Dueling;
+            WaitingTimer.Enabled = false;
         }
         public void EndGame(int winner)
         {

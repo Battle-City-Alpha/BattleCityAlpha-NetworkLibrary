@@ -11,5 +11,6 @@ namespace BCA.Network.Packets.Standard.FromClient
     {
         public Animation Animation { get; set; }
         public bool Remove { get; set; }
+        public int Offset { get; set; }
     }
 }

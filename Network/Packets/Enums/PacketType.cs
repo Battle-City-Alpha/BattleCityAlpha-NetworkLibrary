@@ -110,6 +110,7 @@
         AnimationNotification,
         ChangePartner,
         GivePartner,
-        LoadPartner
+        LoadPartner,
+        WaitingRoom
     }
 }

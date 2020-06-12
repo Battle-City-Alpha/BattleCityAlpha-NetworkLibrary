@@ -116,6 +116,9 @@
   <ItemGroup>
     <Compile Include="Common\Animation.cs" />
     <Compile Include="Common\BasicCard.cs" />
+    <Compile Include="Common\Bets\Bet.cs" />
+    <Compile Include="Common\Bets\BPsBet.cs" />
+    <Compile Include="Common\Bets\CardsBet.cs" />
     <Compile Include="Common\BrocanteCard.cs" />
     <Compile Include="Common\CryptoManager.cs" />
     <Compile Include="Common\Customization.cs" />
@@ -327,6 +330,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerUpdateHubPlayer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerUpdateRoom.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerUsernameColor.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerWaitingRoom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

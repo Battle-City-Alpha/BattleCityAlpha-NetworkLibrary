@@ -6,5 +6,6 @@ namespace BCA.Network.Packets.Standard.FromServer
     {
         public RankingPlayerInfos[] Rankings { get; set; }
         public Customization[] PodiumCustoms { get; set; }
+        public int Season { get; set; }
     }
 }
