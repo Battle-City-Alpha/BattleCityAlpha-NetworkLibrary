@@ -3,6 +3,7 @@ using BCA.Common.Bets;
 using System;
 using System.Collections.Generic;
 using System.Timers;
+using Newtonsoft.Json;
 
 namespace BCA.Common
 {
@@ -26,7 +27,8 @@ namespace BCA.Common
         public event Action<Room> WaitingRoom;
         private Timer WaitingTimer;
 
-        public Bet Bet { get; set; }
+        public BetType BType { get; set; }
+        public string BetSerealized { get; set; }
 
         public Room(int id, RoomConfig config, bool needpassword)
         {
@@ -48,15 +50,16 @@ namespace BCA.Common
             WaitingTimer.Interval = Config.Type == RoomType.Tag ? TimeSpan.FromMinutes(4).TotalMilliseconds : TimeSpan.FromMinutes(2).TotalMilliseconds;
             WaitingTimer.Elapsed += WaitingTimer_Elapsed;
 
-            Bet = null;
+            BetSerealized = "";
         }
-        public void SetBet(Bet b)
+        public void SetBet(Bet b, BetType btype)
         {
-            Bet = b;
+            BType = btype;
+            BetSerealized = JsonConvert.SerializeObject(b);
         }
         public bool IsShadowRoom()
         {
-            return Bet != null;
+            return BetSerealized != "";
         }
 
         private void WaitingTimer_Elapsed(object sender, ElapsedEventArgs e)

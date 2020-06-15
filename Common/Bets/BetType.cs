@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace BCA.Common.Bets
 {
-    public abstract class Bet
+    public enum BetType
     {
-        public BetType BType { get; set; }
+        BPs,
+        Mute,
+        Ban
     }
 }

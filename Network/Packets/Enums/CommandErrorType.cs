@@ -9,6 +9,7 @@
         NoError,
         PlayerNotConnected,
         NotEnoughMoney,
+        OpponentNotEnoughMoney,
         NotEnoughPP,
         PlayerNotExisted,
         CardNotOwned,
@@ -25,6 +26,7 @@
         OpponentDisconnected,
         URLTooLong,
         AlreadyBanned,
-        PartnerNotOwned
+        PartnerNotOwned,
+        TimeTooLong
     }
 }

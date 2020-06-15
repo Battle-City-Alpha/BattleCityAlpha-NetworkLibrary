@@ -111,6 +111,8 @@
         ChangePartner,
         GivePartner,
         LoadPartner,
-        WaitingRoom
+        WaitingRoom,
+        ShadowDuelRequest,
+        ShadowDuelRequestAnswer
     }
 }
