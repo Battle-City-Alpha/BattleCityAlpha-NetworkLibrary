@@ -194,6 +194,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelRequest.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelRequestAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelHost.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelResultAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelServerRestart.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDuelServerStop.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientEnabled.cs" />
@@ -266,6 +267,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDataRetrieval.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDoubleBP.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelResult.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelResultAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelServerStop.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDuelSpectate.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGamesHistory.cs" />

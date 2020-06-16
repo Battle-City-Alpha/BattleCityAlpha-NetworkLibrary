@@ -27,9 +27,6 @@ namespace BCA.Common
         public event Action<Room> WaitingRoom;
         private Timer WaitingTimer;
 
-        public BetType BType { get; set; }
-        public string BetSerealized { get; set; }
-
         public Room(int id, RoomConfig config, bool needpassword)
         {
             Id = id;
@@ -50,16 +47,16 @@ namespace BCA.Common
             WaitingTimer.Interval = Config.Type == RoomType.Tag ? TimeSpan.FromMinutes(4).TotalMilliseconds : TimeSpan.FromMinutes(2).TotalMilliseconds;
             WaitingTimer.Elapsed += WaitingTimer_Elapsed;
 
-            BetSerealized = "";
+            Config.BetSerealized = "";
         }
         public void SetBet(Bet b, BetType btype)
         {
-            BType = btype;
-            BetSerealized = JsonConvert.SerializeObject(b);
+            Config.BType = btype;
+            Config.BetSerealized = JsonConvert.SerializeObject(b);
         }
         public bool IsShadowRoom()
         {
-            return BetSerealized != "";
+            return Config.BetSerealized != "";
         }
 
         private void WaitingTimer_Elapsed(object sender, ElapsedEventArgs e)

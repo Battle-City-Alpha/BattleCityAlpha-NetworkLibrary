@@ -27,6 +27,7 @@
         URLTooLong,
         AlreadyBanned,
         PartnerNotOwned,
-        TimeTooLong
+        TimeTooLong,
+        LevelTooLow
     }
 }

@@ -1,4 +1,5 @@
-﻿using BCA.Common.Enums;
+﻿using BCA.Common.Bets;
+using BCA.Common.Enums;
 
 namespace BCA.Common
 {
@@ -14,6 +15,8 @@ namespace BCA.Common
         public int DrawCount { get; set; }
         public bool NoShuffleDeck { get; set; }
         public string CaptionText { get; set; }
+        public BetType BType { get; set; }
+        public string BetSerealized { get; set; }
 
         public bool IsCustom()
         {

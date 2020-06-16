@@ -113,6 +113,7 @@
         LoadPartner,
         WaitingRoom,
         ShadowDuelRequest,
-        ShadowDuelRequestAnswer
+        ShadowDuelRequestAnswer,
+        DuelResultAnswer
     }
 }
