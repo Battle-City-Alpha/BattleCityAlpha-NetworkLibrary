@@ -114,6 +114,9 @@
         WaitingRoom,
         ShadowDuelRequest,
         ShadowDuelRequestAnswer,
-        DuelResultAnswer
+        DuelResultAnswer,
+        Mutelist,
+        Mutechat,
+        BuySpecialPack
     }
 }

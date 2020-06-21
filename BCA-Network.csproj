@@ -123,6 +123,7 @@
     <Compile Include="Common\BrocanteCard.cs" />
     <Compile Include="Common\CryptoManager.cs" />
     <Compile Include="Common\Customization.cs" />
+    <Compile Include="Common\CustomSpecialPack.cs" />
     <Compile Include="Common\Enums\BonusType.cs" />
     <Compile Include="Common\Enums\CardRarity.cs" />
     <Compile Include="Common\Enums\CustomizationType.cs" />
@@ -165,6 +166,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyMonthPack.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyOwnCustomization.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyPrestigeCustomization.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuySpecialPack.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeBorder.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeDailyQuest.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangePartner.cs" />
@@ -216,6 +218,8 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLogin.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientMPAll.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientMute.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientMuteChat.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientMutelist.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientNextRankingSeason.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientOpenPanel.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientOpenPrestigeShop.cs" />
@@ -257,6 +261,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBuyMonthPack.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBuyPrestigeCustomization.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBuyOwnCustomization.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerBuySpecialPack.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBuyVIP.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerCardDonation.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerChangeDailyQuest.cs" />
@@ -307,7 +312,9 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLogin.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerMaintenance.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerMute.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerMutechat.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerMuted.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerMutelist.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerNeedRoomPassword.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerNextRankingSeason.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerOfflineMessages.cs" />
