@@ -13,7 +13,7 @@ namespace BCA.Common
         public bool NeedPassword { get; private set; }
         public PlayerInfo[] Players { get; set; }
         public int[] ELOs { get; set; }
-        public List<PlayerInfo> Observers { get; set; }
+        public Dictionary<int, PlayerInfo> Observers { get; set; }
         public RoomConfig Config { get; set; }
         public RoomState State { get; set; }
         public int Winner { get; set; }
@@ -41,7 +41,7 @@ namespace BCA.Common
             Config = config;
             Players = new PlayerInfo[Config.Type == RoomType.Tag ? 4 : 2];
             ELOs = new int[Config.Type == RoomType.Tag ? 4 : 2];
-            Observers = new List<PlayerInfo>();
+            Observers = new Dictionary<int, PlayerInfo>();
             State = RoomState.Waiting;
             IsRQorGiveUp = false;
 
@@ -54,7 +54,8 @@ namespace BCA.Common
             WaitingTimer.Interval = Config.Type == RoomType.Tag ? TimeSpan.FromMinutes(4).TotalMilliseconds : TimeSpan.FromMinutes(2).TotalMilliseconds;
             WaitingTimer.Elapsed += WaitingTimer_Elapsed;
 
-            Config.BetSerealized = "";
+            if (Config.BetSerealized == null)
+                Config.BetSerealized = "";
 
             XyzSummoned = new Dictionary<int, List<int>>();
             SynchroSummoned = new Dictionary<int, List<int>>();
@@ -118,11 +119,12 @@ namespace BCA.Common
 
         public void AddSpectator(PlayerInfo info)
         {
-            Observers.Add(info);
+            Observers.Add(info.UserId, info);
         }
         public void RemoveSpectator(PlayerInfo info)
         {
-            Observers.Remove(info);
+            if (Observers.ContainsKey(info.UserId))
+                Observers.Remove(info.UserId);
         }
 
         public void StartGame()
