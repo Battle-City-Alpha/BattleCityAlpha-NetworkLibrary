@@ -27,6 +27,13 @@ namespace BCA.Common
         public event Action<Room> WaitingRoom;
         private Timer WaitingTimer;
 
+        public Dictionary<int, List<int>> XyzSummoned { get; set; }
+        public Dictionary<int, List<int>> SynchroSummoned { get; set; }
+        public Dictionary<int, List<int>> FusionSummoned { get; set; }
+        public Dictionary<int, List<int>> RitualSummoned { get; set; }
+        public Dictionary<int, List<int>> LinkSummoned { get; set; }
+        public Dictionary<int, List<int>> PendulumSummoned { get; set; }
+
         public Room(int id, RoomConfig config, bool needpassword)
         {
             Id = id;
@@ -48,6 +55,13 @@ namespace BCA.Common
             WaitingTimer.Elapsed += WaitingTimer_Elapsed;
 
             Config.BetSerealized = "";
+
+            XyzSummoned = new Dictionary<int, List<int>>();
+            SynchroSummoned = new Dictionary<int, List<int>>();
+            FusionSummoned = new Dictionary<int, List<int>>();
+            RitualSummoned = new Dictionary<int, List<int>>();
+            LinkSummoned = new Dictionary<int, List<int>>();
+            PendulumSummoned = new Dictionary<int, List<int>>();
         }
         public void SetBet(Bet b, BetType btype)
         {
@@ -115,6 +129,17 @@ namespace BCA.Common
         {
             State = RoomState.Dueling;
             WaitingTimer.Enabled = false;
+
+            foreach (PlayerInfo player in Players)
+                if (player != null)
+                {
+                    XyzSummoned.Add(player.UserId, new List<int>());
+                    SynchroSummoned.Add(player.UserId, new List<int>());
+                    FusionSummoned.Add(player.UserId, new List<int>());
+                    RitualSummoned.Add(player.UserId, new List<int>());
+                    LinkSummoned.Add(player.UserId, new List<int>());
+                    PendulumSummoned.Add(player.UserId, new List<int>());
+                }
         }
         public void EndGame(int winner)
         {
