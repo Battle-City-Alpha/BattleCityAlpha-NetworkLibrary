@@ -111,6 +111,8 @@ namespace BCA.Common
 
         public void AddSpectator(PlayerInfo info)
         {
+            if (Observers.ContainsKey(info.UserId))
+                Observers.Remove(info.UserId);
             Observers.Add(info.UserId, info);
         }
         public void RemoveSpectator(PlayerInfo info)
