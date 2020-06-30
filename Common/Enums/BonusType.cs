@@ -9,6 +9,7 @@
         Border,
         Avatar,
         Sleeve,
-        Title
+        Title,
+        Partner
     }
 }

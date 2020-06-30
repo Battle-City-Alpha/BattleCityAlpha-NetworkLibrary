@@ -5,5 +5,6 @@
         public int Avatar { get; set; }
         public int Border { get; set; }
         public int Sleeve { get; set; }
+        public int Partner { get; set; }
     }
 }

@@ -163,6 +163,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskMonthPack.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskPrestigeCustomizations.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskDataRetrieval.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskRoomList.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyMonthPack.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyOwnCustomization.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyPrestigeCustomization.cs" />
@@ -211,6 +212,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveTitle.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGreetInfinite.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientKick.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientKillRoom.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLoadAvatars.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLoadBorders.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLoadPartners.cs" />
@@ -329,6 +331,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerRemoveHubPlayer.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerPlayerlist.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerResetStat.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerRoomList.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerSearchCard.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerShadowDuelRequest.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerShadowDuelRequestResult.cs" />

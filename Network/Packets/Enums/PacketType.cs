@@ -117,6 +117,8 @@
         DuelResultAnswer,
         Mutelist,
         Mutechat,
-        BuySpecialPack
+        BuySpecialPack,
+        RoomList,
+        KillRoom
     }
 }
