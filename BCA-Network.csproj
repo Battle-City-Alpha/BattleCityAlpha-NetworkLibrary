@@ -136,6 +136,7 @@
     <Compile Include="Common\PlayerCard.cs" />
     <Compile Include="Common\PlayerInfo.cs" />
     <Compile Include="Common\RankingPlayerInfos.cs" />
+    <Compile Include="Common\RankingTeamInfos.cs" />
     <Compile Include="Common\Room.cs" />
     <Compile Include="Common\GlobalTools.cs" />
     <Compile Include="Common\RoomConfig.cs" />
@@ -156,6 +157,7 @@
     <Compile Include="Network\Packets\MMO\FromClient\MMOClientAuthentification.cs" />
     <Compile Include="Network\Packets\MMO\FromServer\MMOServerAuthentification.cs" />
     <Compile Include="Network\Packets\Packet.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientAddTeamMember.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskAnimations.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskDailyQuest.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskGamesHistory.cs" />
@@ -164,6 +166,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskPrestigeCustomizations.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskDataRetrieval.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskRoomList.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskTeamProfile.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyMonthPack.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyOwnCustomization.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyPrestigeCustomization.cs" />
@@ -172,6 +175,8 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeDailyQuest.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangePartner.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeSleeve.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeTeamCoLeader.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeTeamLeader.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChangeTitle.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskBooster.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskBrocante.cs" />
@@ -190,6 +195,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientChatMessage.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientClear.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientCloseBrocante.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientCreateTeam.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDisabled.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDonPoints.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientDoubleBP.cs" />
@@ -213,6 +219,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGreetInfinite.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientKick.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientKillRoom.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientLeaveTeam.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLoadAvatars.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLoadBorders.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientLoadPartners.cs" />
@@ -227,6 +234,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientOpenPrestigeShop.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPanelProfileUpdate.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPong.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientRemoveTeamMember.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientResetStats.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRoomNeedPassword.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientSendDeck.cs" />
@@ -259,6 +267,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAnimationNotification.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskBooster.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskMonthPack.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerAskTeam.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBoosterCollection.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBuyMonthPack.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerBuyPrestigeCustomization.cs" />

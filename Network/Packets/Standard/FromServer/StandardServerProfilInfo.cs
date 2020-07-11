@@ -32,5 +32,8 @@ namespace BCA.Network.Packets.Standard.FromServer
         public int RageQuit { get; set; }
         public int GiveUp { get; set; }
         public int Ranking { get; set; }
+        public int TeamID { get; set; }
+        public string TeamName { get; set; }
+        public string TeamEmblem { get; set; }
     }
 }

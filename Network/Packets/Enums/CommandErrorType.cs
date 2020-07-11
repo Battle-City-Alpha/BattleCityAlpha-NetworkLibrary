@@ -28,6 +28,13 @@
         AlreadyBanned,
         PartnerNotOwned,
         TimeTooLong,
-        LevelTooLow
+        LevelTooLow,
+        TargetAlreadyInATeam,
+        YouAreAlreadyInATeam,
+        YouHaveNoTeam,
+        YouAreNotTeamLeader,
+        YouAreNotTeamCoLeader,
+        TargetNotInYourTeam,
+        PlayerAlreadyInTeam
     }
 }

@@ -119,6 +119,13 @@
         Mutechat,
         BuySpecialPack,
         RoomList,
-        KillRoom
+        KillRoom,
+        CreateTeam,
+        AddTeamPlayer,
+        RemoveTeamPlayer,
+        LeaveTeam,
+        UpdateTeamColeader,
+        UpdateTeamLeader,
+        AskTeamProfile
     }
 }

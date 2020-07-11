@@ -128,7 +128,7 @@ namespace BCA.Common
 
             foreach (PlayerInfo player in Players)
                 if (player != null)
-                    ExtraTypeSummoned.Add(player.UserId, new List<int>());
+                    ExtraTypeSummoned[player.UserId] = new List<int>();
         }
         public void EndGame(int winner)
         {
