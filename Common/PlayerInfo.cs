@@ -13,6 +13,9 @@ namespace BCA.Common
         public PlayerRank Rank { get; set; }
         public PlayerState State { get; set; }
         public Customization Avatar { get; set; }
+        public int Team { get; set; }
+        public string TeamTag { get; set; }
+        public string TeamEmblem { get; set; }
 
         public override string ToString()
         {

@@ -136,7 +136,6 @@
     <Compile Include="Common\PlayerCard.cs" />
     <Compile Include="Common\PlayerInfo.cs" />
     <Compile Include="Common\RankingPlayerInfos.cs" />
-    <Compile Include="Common\RankingTeamInfos.cs" />
     <Compile Include="Common\Room.cs" />
     <Compile Include="Common\GlobalTools.cs" />
     <Compile Include="Common\RoomConfig.cs" />
@@ -278,6 +277,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerChangeDailyQuest.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerChangeUsername.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerCloseBrocante.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerCreateTeam.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDailyQuest.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDailyQuestNotification.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerDataRetrieval.cs" />

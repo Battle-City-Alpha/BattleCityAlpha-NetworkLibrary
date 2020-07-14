@@ -8,6 +8,6 @@ namespace BCA.Network.Packets.Standard.FromClient
 {
     public class StandardClientChangeTeamLeader : Packet
     {
-        public int TargetID { get; set; }
+        public string Target { get; set; }
     }
 }

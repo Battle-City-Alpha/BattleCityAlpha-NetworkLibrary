@@ -35,6 +35,10 @@
         YouAreNotTeamLeader,
         YouAreNotTeamCoLeader,
         TargetNotInYourTeam,
-        PlayerAlreadyInTeam
+        PlayerAlreadyInTeam,
+        TeamNameAlreadyExist,
+        TeamTagAlreadyExist,
+        TeamFull,
+        CantChangeTeamNow
     }
 }

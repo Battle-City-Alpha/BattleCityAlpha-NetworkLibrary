@@ -8,5 +8,6 @@
         public int ELO { get; set; }
         public int RankedWin { get; set; }
         public int RankedLose { get; set; }
+        public string Team { get; set; }
     }
 }
