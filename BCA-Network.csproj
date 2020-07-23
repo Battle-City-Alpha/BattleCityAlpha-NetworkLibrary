@@ -136,10 +136,12 @@
     <Compile Include="Common\PlayerCard.cs" />
     <Compile Include="Common\PlayerInfo.cs" />
     <Compile Include="Common\RankingPlayerInfos.cs" />
+    <Compile Include="Common\RankingTeamInfos.cs" />
     <Compile Include="Common\Room.cs" />
     <Compile Include="Common\GlobalTools.cs" />
     <Compile Include="Common\RoomConfig.cs" />
     <Compile Include="Common\RoomResult.cs" />
+    <Compile Include="Common\TeamGameResult.cs" />
     <Compile Include="Network\Helpers\CompressHelper.cs" />
     <Compile Include="Network\Packets\BinaryClient.cs" />
     <Compile Include="Network\NetworkClient.cs" />
@@ -165,6 +167,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskPrestigeCustomizations.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskDataRetrieval.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskRoomList.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskTeamGamesHistory.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskTeamProfile.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyMonthPack.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientBuyOwnCustomization.cs" />
@@ -208,6 +211,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientEnabled.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGetQuestReward.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGetRanking.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientGetTeamsRanking.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveAvatar.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveBorder.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientGiveCard.cs" />
@@ -251,6 +255,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientSellBrocanteCard.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientSpectate.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientStopMaintenance.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientTeamMemberGamesHistory.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeAnswer.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeExit.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientTradeMessage.cs" />
@@ -260,6 +265,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientUnmute.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientUnban.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientUpdateAnimation.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientUpdateEmblem.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientUsernameColor.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskBoosterCollection.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerAddHubPlayer.cs" />
@@ -296,6 +302,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetPartner.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetRanking.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetSleeve.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetTeamsRanking.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGetTitle.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerGreetInfinite.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerLoadBorders.cs" />
@@ -346,6 +353,7 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerShadowDuelRequestResult.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerShareReplay.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerSendDeck.cs" />
+    <Compile Include="Network\Packets\Standard\FromServer\StandardServerTeamGamesHistory.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeExit.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeMessage.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerTradeProposition.cs" />

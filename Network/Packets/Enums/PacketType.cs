@@ -126,6 +126,10 @@
         LeaveTeam,
         UpdateTeamColeader,
         UpdateTeamLeader,
-        AskTeamProfile
+        AskTeamProfile,
+        UpdateTeamEmblem,
+        GetTeamsRanking,
+        GetTeamGamesHistory,
+        GetTeamMemberGamesHistory
     }
 }

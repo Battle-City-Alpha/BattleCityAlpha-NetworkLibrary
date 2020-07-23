@@ -1,5 +1,4 @@
 ﻿using BCA.Common;
-using BCA.Common.Bets;
 
 namespace BCA.Network.Packets.Standard.FromClient
 {

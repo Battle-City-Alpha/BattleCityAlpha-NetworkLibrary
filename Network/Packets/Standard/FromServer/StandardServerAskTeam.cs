@@ -1,9 +1,5 @@
 ﻿using BCA.Common;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Standard.FromServer
 {
@@ -15,6 +11,7 @@ namespace BCA.Network.Packets.Standard.FromServer
         public int LeaderID { get; set; }
         public int ColeaderID { get; set; }
         public PlayerInfo[] Members { get; set; }
+        public Dictionary<int, int[]> Stats { get; set; }
         public int Wins { get; set; }
         public int Loses { get; set; }
         public string Tag { get; set; }

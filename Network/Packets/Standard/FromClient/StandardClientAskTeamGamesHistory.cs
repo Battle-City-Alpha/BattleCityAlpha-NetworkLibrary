@@ -1,6 +1,6 @@
 ﻿namespace BCA.Network.Packets.Standard.FromClient
 {
-    public class StandardClientAskTeamProfile : Packet
+    public class StandardClientAskTeamGamesHistory : Packet
     {
         public int TeamID { get; set; }
     }

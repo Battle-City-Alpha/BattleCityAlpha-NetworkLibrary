@@ -1,9 +1,9 @@
-﻿using BCA.Common.Enums;
-using BCA.Common.Bets;
+﻿using BCA.Common.Bets;
+using BCA.Common.Enums;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Timers;
-using Newtonsoft.Json;
 
 namespace BCA.Common
 {
