@@ -155,8 +155,6 @@
     <Compile Include="Network\Packets\Enums\PlayerRank.cs" />
     <Compile Include="Network\Packets\Enums\PlayerState.cs" />
     <Compile Include="Network\Packets\Enums\RegisterFailReason.cs" />
-    <Compile Include="Network\Packets\MMO\FromClient\MMOClientAuthentification.cs" />
-    <Compile Include="Network\Packets\MMO\FromServer\MMOServerAuthentification.cs" />
     <Compile Include="Network\Packets\Packet.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAddTeamMember.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientAskAnimations.cs" />
@@ -239,6 +237,7 @@
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientPong.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRemoveTeamMember.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientResetStats.cs" />
+    <Compile Include="Network\Packets\Standard\FromClient\StandardClientRestartAstral.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientRoomNeedPassword.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientSendDeck.cs" />
     <Compile Include="Network\Packets\Standard\FromClient\StandardClientShadowDuelAnswer.cs" />
@@ -365,7 +364,12 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerUpdateRoom.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerUsernameColor.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerWaitingRoom.cs" />
+    <Compile Include="Network\Packets\Story Mode\FromClient\StoryModeClientAskUnlockScene.cs" />
+    <Compile Include="Network\Packets\Story Mode\FromClient\StoryModeClientEndDialogScene.cs" />
+    <Compile Include="Network\Packets\Story Mode\FromServer\StoryModeServerGetUnlockScenes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Story Mode\Enums\SceneState.cs" />
+    <Compile Include="Story Mode\SceneInfos.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="NLog.config">

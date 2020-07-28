@@ -31,6 +31,8 @@ namespace BCA.Common
 
         public bool IsTurboDuel { get; set; }
 
+        public bool IsStoryDuel { get; set; }
+
         public Room(int id, RoomConfig config, bool needpassword)
         {
             Id = id;
@@ -55,6 +57,8 @@ namespace BCA.Common
                 Config.BetSerealized = "";
 
             ExtraTypeSummoned = new Dictionary<int, List<int>>();
+
+            IsStoryDuel = false;
         }
         public void SetBet(Bet b, BetType btype)
         {

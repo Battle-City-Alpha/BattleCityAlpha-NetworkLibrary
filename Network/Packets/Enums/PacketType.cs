@@ -130,6 +130,9 @@
         UpdateTeamEmblem,
         GetTeamsRanking,
         GetTeamGamesHistory,
-        GetTeamMemberGamesHistory
+        GetTeamMemberGamesHistory,
+        RestartAstral,
+        AskScene,
+        EndDialogScene
     }
 }
