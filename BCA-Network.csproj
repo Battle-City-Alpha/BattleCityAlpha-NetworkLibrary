@@ -364,11 +364,14 @@
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerUpdateRoom.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerUsernameColor.cs" />
     <Compile Include="Network\Packets\Standard\FromServer\StandardServerWaitingRoom.cs" />
-    <Compile Include="Network\Packets\Story Mode\FromClient\StoryModeClientAskUnlockScene.cs" />
+    <Compile Include="Network\Packets\Story Mode\FromClient\StoryModeClientAskScene.cs" />
     <Compile Include="Network\Packets\Story Mode\FromClient\StoryModeClientEndDialogScene.cs" />
-    <Compile Include="Network\Packets\Story Mode\FromServer\StoryModeServerGetUnlockScenes.cs" />
+    <Compile Include="Network\Packets\Story Mode\FromClient\StoryModeClientGetOpenWorldCharacter.cs" />
+    <Compile Include="Network\Packets\Story Mode\FromServer\StoryModeServerGetOpenWorldCharacters.cs" />
+    <Compile Include="Network\Packets\Story Mode\FromServer\StoryModeServerGetScenes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Story Mode\Enums\SceneState.cs" />
+    <Compile Include="Story Mode\OpenWorldCharacter.cs" />
     <Compile Include="Story Mode\SceneInfos.cs" />
   </ItemGroup>
   <ItemGroup>

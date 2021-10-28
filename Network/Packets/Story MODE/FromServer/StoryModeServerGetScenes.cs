@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Story_Mode.FromServer
 {
-    public class StoryModeServerGetUnlockScenes : Packet
+    public class StoryModeServerGetScenes : Packet
     {
         public SceneInfo[] Scenes { get; set; }
     }

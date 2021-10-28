@@ -8,8 +8,7 @@ namespace BCA.Story_Mode.Enums
 {
     public enum SceneState
     {
-        New = 0,
-        Done = 1,
-        Success = 2
+        Lock = 0,
+        Unlock = 1
     }
 }

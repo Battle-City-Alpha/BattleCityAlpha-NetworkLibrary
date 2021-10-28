@@ -132,7 +132,8 @@
         GetTeamGamesHistory,
         GetTeamMemberGamesHistory,
         RestartAstral,
-        AskScene,
-        EndDialogScene
+        GetScenes,
+        EndDialogScene,
+        GetOpenWorldCharacters
     }
 }

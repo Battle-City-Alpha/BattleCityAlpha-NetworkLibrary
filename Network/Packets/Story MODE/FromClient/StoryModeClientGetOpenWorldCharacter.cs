@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BCA.Network.Packets.Story_Mode.FromClient
 {
-    public class StoryModeClientAskUnlockScene : Packet
+    public class StoryModeClientGetOpenWorldCharacter : Packet
     {
     }
 }
